@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         ],
 
-    branding: [
+        branding: [
             {
                 title: '버거클럽',
                 category: 'Branding',
@@ -173,22 +173,23 @@ document.addEventListener('DOMContentLoaded', function () {
         ],
 
         motion: [
-            {
-                title: 'G-MARKET 2D 30s 모션그래픽',
-                category: 'Motion',
-                description: '타이포그래피 기반 모션그래픽',
-                layout: 'wide',
-                image: 'images/지마켓썸네일.png',
-                detailImages: [
-                    'images/motion-01.jpg'
-                ]
-            },
+
             {
                 title: '한국수목원정원관리원 공모전 생성형 AI 활용 (숏폼 부문)',
                 category: 'Video',
                 description: '움직임을 활용한 영상 콘텐츠',
                 layout: 'wide',
                 image: 'images/한수정썸네일.png',
+                detailImages: [
+                    'images/motion-01.jpg'
+                ]
+            },
+            {
+                title: 'G-MARKET 2D 30s 모션그래픽',
+                category: 'Motion',
+                description: '타이포그래피 기반 모션그래픽',
+                layout: 'wide',
+                image: 'images/지마켓썸네일.png',
                 detailImages: [
                     'images/motion-02.jpg'
                 ]
