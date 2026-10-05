@@ -161,10 +161,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 가독성을 높이고, 사용자가 필요한 정보를 빠르게 찾고 자연스럽게
                 약정서 작성까지 이어갈 수 있도록 설계했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'wide',
-                image: 'images/연세대2단리플렛1.jpg',
+                image: 'images/연세대2단리플렛1.png',
                 detailImages: [
-                    'images/연세대2단리플렛1.jpg',
-                    'images/연세대2단리플렛2.jpg'
+                    'images/연세대2단리플렛1.png',
+                    'images/연세대2단리플렛2.png',
+                    'images/연세대2단리플렛3.jpg',
+                    'images/연세대2단리플렛4.jpg',
                 ]
             },
             {
