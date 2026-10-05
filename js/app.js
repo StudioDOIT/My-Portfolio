@@ -191,10 +191,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 핵심 내용을 빠르게 파악할 수 있도록 시각적 위계와
                 가독성을 중점적으로 설계했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'wide',
-                image: 'images/스타벅스3단리플렛1.jpg',
+                image: 'images/스타벅스3단리플렛1.png',
                 detailImages: [
-                    'images/스타벅스3단리플렛1.jpg',
-                    'images/스타벅스3단리플렛2.jpg'
+                    'images/스타벅스3단리플렛1.png',
+                    'images/스타벅스3단리플렛2.png',
+                    'images/스타벅스3단리플렛3.jpg',
+                    'images/스타벅스3단리플렛4.jpg',
                 ]
             },
             {
