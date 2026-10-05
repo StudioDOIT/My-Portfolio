@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 ]
             },
             {
-                title: '연세대 3단 리플렛',
+                title: '연세대 2단 리플렛',
                 category: 'leaflet',
                 description: '힘내라 우리 후배들!',
                 // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
