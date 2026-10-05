@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 layout: 'portrait',
                 image: 'images/청년창업지원포스터1.jpg',
                 detailImages: [
-                    'images/청년창업지원포스터1.jpg'
+                    'images/visual-05.jpg'
                 ]
             },
             {
@@ -129,11 +129,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 layout: 'portrait',
                 image: 'images/공기업취업특강포스터1.jpg',
                 detailImages: [
-                    'images/공기업취업특강포스터1.jpg'
+                    'images/romaine-poster.jpg'
                 ]
             },
             {
-                title: '연세대 2단 리플렛',
+                title: '연세대 3단 리플렛',
                 category: 'leaflet',
                 description: '힘내라 우리 후배들!',
                 // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
@@ -161,12 +161,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 가독성을 높이고, 사용자가 필요한 정보를 빠르게 찾고 자연스럽게
                 약정서 작성까지 이어갈 수 있도록 설계했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'wide',
-                image: 'images/연세대2단리플렛1.png',
+                image: 'images/연세대2단리플렛1.jpg',
                 detailImages: [
-                    'images/연세대2단리플렛1.png',
-                    'images/연세대2단리플렛2.png',
-                    'images/연세대2단리플렛3.jpg',
-                    'images/연세대2단리플렛4.jpg'
+                    'images/연세대2단리플렛1.jpg',
+                    'images/연세대2단리플렛2.jpg'
                 ]
             },
             {
@@ -191,12 +189,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 핵심 내용을 빠르게 파악할 수 있도록 시각적 위계와
                 가독성을 중점적으로 설계했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'wide',
-                image: 'images/스타벅스3단리플렛1.png',
+                image: 'images/스타벅스3단리플렛1.jpg',
                 detailImages: [
-                    'images/스타벅스3단리플렛1.png',
-                    'images/스타벅스3단리플렛2.png',
-                    'images/스타벅스3단리플렛3.jpg',
-                    'images/스타벅스3단리플렛4.jpg'
+                    'images/스타벅스3단리플렛1.jpg',
+                    'images/스타벅스3단리플렛2.jpg'
                 ]
             },
             {
@@ -335,8 +331,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 layout: 'wide',
                 image: 'images/지마켓썸네일.png',
 
-                // ★ 여기 수정: 실제 영상 파일 경로로 변경
-                videoSrc: 'videos/지마켓완성.mp4',
+                // YouTube 공유 주소의 영상 ID
+                youtubeId: 'F6jmoRrXnYE',
 
                 detailImages: [
                     'images/지마켓썸네일.png'
@@ -409,8 +405,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 layout: 'wide',
                 image: 'images/코르티스레드레드썸네일.jpg',
 
-                // ★ 여기 수정: 실제 영상 파일 경로로 변경
-                videoSrc: 'videos/CORTIS (코르티스) - REDRED 교차편집 (STAGE MIX).mp4',
+                // YouTube 공유 주소의 영상 ID
+                youtubeId: 'xcibSXSd048',
 
                 detailImages: [
                     'images/코르티스레드레드썸네일.jpg'
@@ -836,12 +832,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         const player = document.getElementById('motion-player');
         const previousVideo = document.getElementById('modal-video');
-        const hasVideo = isMotion && Boolean(project.videoSrc);
+        const youtubeId = /^[A-Za-z0-9_-]{11}$/.test(project.youtubeId || '')
+            ? project.youtubeId : '';
+        const hasVideo = isMotion && Boolean(youtubeId || project.videoSrc);
         if (player) player.hidden = !hasVideo;
         if (previousVideo) {
-            previousVideo.pause();
+            stopModalVideo(previousVideo);
             // 매번 새 플레이어를 사용해 이전 영상의 로딩/오류 이벤트가 섞이지 않게 합니다.
-            const video = document.createElement('video');
+            const video = document.createElement(hasVideo && youtubeId ? 'iframe' : 'video');
             video.id = 'modal-video';
             video.controls = true;
             video.playsInline = true;
@@ -849,7 +847,14 @@ document.addEventListener('DOMContentLoaded', function () {
             previousVideo.replaceWith(video);
             const errorNote = document.getElementById('modal-video-error');
             if (errorNote) errorNote.hidden = true;
-            if (hasVideo) {
+            if (hasVideo && youtubeId) {
+                video.title = project.title + ' — YouTube 영상';
+                video.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+                video.allowFullscreen = true;
+                video.referrerPolicy = 'strict-origin-when-cross-origin';
+                video.style.cssText = 'display:block;width:100%;height:auto;aspect-ratio:16/9;min-height:200px;border:0;background:#000;';
+                video.src = 'https://www.youtube.com/embed/' + youtubeId + '?playsinline=1&rel=0';
+            } else if (hasVideo) {
                 video.poster = project.image;
                 video.addEventListener('loadedmetadata', function () {
                     if (errorNote) errorNote.hidden = true;
@@ -1031,6 +1036,16 @@ document.addEventListener('DOMContentLoaded', function () {
        10. 모달 닫기 / 키보드 처리
        ========================================================= */
 
+    // iframe을 비우면 모달을 닫는 즉시 YouTube 재생도 종료됩니다.
+    function stopModalVideo(video) {
+        if (!video) return;
+        if (video.tagName === 'IFRAME') {
+            video.src = 'about:blank';
+        } else if (typeof video.pause === 'function') {
+            video.pause();
+        }
+    }
+
     function closeProjectModal() {
         if (
             !modal ||
@@ -1042,7 +1057,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         modalClosing = true;
         const video = document.getElementById('modal-video');
-        if (video) video.pause();
+        stopModalVideo(video);
 
         const overlay = modal.querySelector('.modal-overlay');
         const container = modal.querySelector('.modal-container');
