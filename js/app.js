@@ -70,6 +70,12 @@ document.addEventListener('DOMContentLoaded', function () {
        portrait: 세로 작업
        wide: 가로 작업
 
+       description: 목록에 표시할 짧은 설명
+       detailDescription: 모달에 표시할 긴 설명 (백틱 안에 작성)
+       빈 상태이면 기존 description을 표시합니다.
+       문단 사이에는 빈 줄을 넣으세요.
+       글 안에 백틱을 사용할 때는 \`로, ${를 쓸 때는 \${로 적으세요.
+
        image: 목록 썸네일
        detailImages: 모달 상세 이미지
        ========================================================= */
@@ -80,122 +86,337 @@ document.addEventListener('DOMContentLoaded', function () {
                 title: '청년창업지원사업 안내포스터',
                 category: 'Poster',
                 description: '청년의 시작을 그리다.',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 작업의 모달에 표시할 내용을 입력하세요.
+                format: 'A3',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
+                role: '기획 · 디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Illustrator',           // 사용 프로그램
+                designIntent: `가장 먼저 확인해야 하는 정보를
+                중심으로 콘텐츠를 구성하고,
+                한눈에 핵심 내용을 파악할 수 있도록
+                명확한 정보 위계를 적용했습니다.
+
+`,    // 작업의 목적 · 대상 · 전달할 메시지
+                designApproach: `청년층을 대상으로 하는 홍보물인 만큼
+                공공기관 특유의 신뢰감은 유지하면서도
+                밝고 역동적인 그래픽 요소와 컬러를 활용해
+                친근하고 적극적인 분위기를 표현했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'portrait',
                 image: 'images/청년창업지원포스터1.jpg',
                 detailImages: [
-                    'images/visual-05.jpg'
+                    'images/청년창업지원포스터1.jpg'
                 ]
             },
             {
                 title: '공기업 취업특강 안내포스터',
                 category: 'Poster',
                 description: '이제는 취업하세요!',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 작업의 모달에 표시할 내용을 입력하세요.
+                format: 'A3',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
+                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Illustrator',           // 사용 프로그램
+                designIntent: `가독성 높은 레이아웃으로 배치하여 
+                핵심 정보를 빠르게 확인할 수 있도록
+                설계하였습니다.
+
+`,    // 작업의 목적 · 대상 · 전달할 메시지
+                designApproach: `공공기관 관련 콘텐츠에 어울리는
+                신뢰감 있고 정돈된 인상을 유지하는 데
+                중점을 두었습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'portrait',
                 image: 'images/공기업취업특강포스터1.jpg',
                 detailImages: [
-                    'images/romaine-poster.jpg'
+                    'images/공기업취업특강포스터1.jpg'
                 ]
             },
             {
-                title: '연세대 3단 리플렛',
+                title: '연세대 2단 리플렛',
                 category: 'leaflet',
                 description: '힘내라 우리 후배들!',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 작업의 모달에 표시할 내용을 입력하세요.
+                format: 'A4',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
+                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Illustrator · ChatGPT',           // 사용 프로그램
+                designIntent: `연세 후배사랑 장학기금 모금 캠페인의 목적과 신뢰감을
+                효과적으로 전달할 수 있도록 학교의 아이덴티티 컬러인
+                블루를 중심으로 전체적인 톤앤매너를 구성했습니다.
+
+                캠페인의 메시지와 일러스트를 활용해 후배를
+                응원하는 따뜻한 의미를 강조하고, 내지까지 자연스럽게
+                이어질 수 있도록 통일된 그래픽 요소와 레이아웃을 적용했습니다.
+
+`,    // 작업의 목적 · 대상 · 전달할 메시지
+                designApproach: `
+
+                내지에서는 장학금 유형과 기념품 안내, 약정서 등 많은 정보를
+                쉽게 확인할 수 있도록 내용별 영역을 명확하게 구분하고 시각적
+                위계를 정리했습니다.
+
+                특히 설명 영역과 작성 영역의 성격을 구분해
+                가독성을 높이고, 사용자가 필요한 정보를 빠르게 찾고 자연스럽게
+                약정서 작성까지 이어갈 수 있도록 설계했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'wide',
-                image: 'images/연세대2단리플렛1.jpg',
+                image: 'images/연세대2단리플렛1.png',
                 detailImages: [
-                    'images/visual-06.jpg'
+                    'images/연세대2단리플렛1.png',
+                    'images/연세대2단리플렛2.png',
+                    'images/연세대2단리플렛3.jpg',
+                    'images/연세대2단리플렛4.jpg'
                 ]
             },
             {
                 title: '스타벅스 3단 리플렛',
                 category: 'leaflet',
                 description: '스타벅스와 함께 특별한 순간을.',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 작업의 모달에 표시할 내용을 입력하세요.
+                format: 'A4',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
+                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Illustrator · ChatGPT',           // 사용 프로그램
+                designIntent: `딜리버스 서비스에 대한 내용을 쉽게 전달하기 위해
+                접지형 인쇄물의 특성을 고려해 표지, 브랜드 소개,
+                주요 메뉴 및 프로모션 정보가 자연스럽게 이어지도록
+                콘텐츠 흐름을 구성했으며, 펼쳤을 때 각 면이 하나의
+                통일된 레이아웃으로 연결되도록 디자인했습니다.
+
+`,    // 작업의 목적 · 대상 · 전달할 메시지
+                designApproach: `특히 3단 접지 구조에서 사용자가 정보를 확인하는
+                순서를 고려해 표지에서 관심을 유도하고, 내부에서는
+                핵심 내용을 빠르게 파악할 수 있도록 시각적 위계와
+                가독성을 중점적으로 설계했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'wide',
-                image: 'images/스타벅스3단리플렛1.jpg',
+                image: 'images/스타벅스3단리플렛1.png',
                 detailImages: [
-                    'images/visual-06.jpg'
+                    'images/스타벅스3단리플렛1.png',
+                    'images/스타벅스3단리플렛2.png',
+                    'images/스타벅스3단리플렛3.jpg',
+                    'images/스타벅스3단리플렛4.jpg'
                 ]
             },
             {
                 title: '민생회복소비쿠폰 카드뉴스',
                 category: 'Card news',
                 description: '일상에 닿는 정책의 언어.',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 작업의 모달에 표시할 내용을 입력하세요.
+                format: '1080 * 1080 px',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
+                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Illustrator',           // 사용 프로그램
+                designIntent: `지원 대상, 신청 방법, 지급 방식 등 핵심 정보를
+                중심으로 내용을 단계별로 정리하고, 복잡한 정책
+                정보를 한눈에 파악할 수 있도록 직관적인 정보 구조를
+                구성했습니다.
+
+                특히 이용자가 실제로 궁금해할 정보를 중심으로
+                배치해 정보 전달성과 가독성을 함께 높였습니다.
+`,    // 작업의 목적 · 대상 · 전달할 메시지
+                designApproach: `공공정보 콘텐츠의 신뢰감을 유지하면서도
+                딱딱한 인상을 줄이기 위해 명확한 타이포그래피와
+                간결한 그래픽 요소를 활용했으며, 중요한 내용은
+                컬러와 크기 대비를 통해 자연스럽게 강조했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'portrait',
-                image: 'images/민생회복소비쿠폰1.jpg',
+                image: 'images/민생회복1.jpg',
                 detailImages: [
-                    'images/visual-04.jpg'
+                    'images/민생회복1.jpg',
+                    'images/민생회복2.jpg',
+                    'images/민생회복3.jpg',
+                    'images/민생회복4.jpg',
+                    'images/민생회복5.jpg',
+                    'images/민생회복6.jpg'
+
                 ]
             },
             {
                 title: '기업 명함 디자인',
                 category: 'Business card',
                 description: '작은 면적에 담긴 서로 다른 아이덴티티.',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 작업의 모달에 표시할 내용을 입력하세요.
+                format: '?????',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
+                role: '기획 · 디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Illustrator',           // 사용 프로그램
+                designIntent: `각 브랜드의 로고, 컬러, 타이포그래피,
+                이미지 톤 등 시각적 특징을 참고해 서로 다른
+                분위기의 명함 디자인을 구성하였습니다.
+
+`,    // 작업의 목적 · 대상 · 전달할 메시지
+                designApproach: `특히 앞·뒷면의 시각적 연결성과 실제 인쇄물을
+                고려한 구성에 중점을 두어, 단순한 정보 전달물을
+                넘어 브랜드 이미지를 보여주는 하나의 비주얼
+                아이덴티티 매체로 완성했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'wide',
                 image: 'images/기업명함제작1.png',
                 detailImages: [
-                    'images/americano-poster.jpg'
+                    'images/기업명함제작1.png',
+                    'images/기업명함제작2.png',
                 ]
             },
-            {
-                title: 'CHERIE 히어로 배너',
-                category: 'Online banner',
-                description: 'Color that speaks.',
-                layout: 'wide',
-                image: 'images/CHERIE 가상브랜드히어로배너1.jpg',
-                detailImages: [
-                    'images/cherie-banner.jpg'
-                ]
-            },
+
 
         ],
 
         branding: [
             {
-                title: '버거클럽',
+                title: 'BURGERCLUB',
                 category: 'Branding',
-                description: 'MZ세대를 위한 버거 브랜드',
+                description: '편하게 맛있는 버거를 마음껏 먹고 싶은 사람들을 위한 수제버거 브랜드',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 브랜드의 모달에 표시할 내용을 입력하세요.
+                scope: '네이밍 · 로고 · 패키지 · 응용 디자인',           // 예: 네이밍 · 로고 · 패키지 · 응용 디자인
+                role: '기획 · 디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Illustrator · ChatGPT',           // 사용 프로그램
+                brandConcept: ``,    // 브랜드가 지향하는 가치 · 타깃 · 핵심 콘셉트
+                identityNotes: ``,   // 로고 · 컬러 · 서체 · 응용 디자인의 전개
                 layout: 'wide',
                 image: 'images/버거클럽썸네일.png',
                 detailImages: [
-                    'images/burgerclub-cover.jpg'
+                    'images/버거클럽썸네일.png'
                 ]
             },
             {
                 title: 'fold',
                 category: 'Branding',
                 description: '겹겹이 쌓이는 일상의 따뜻함과 소중함을 담은 베이커리 브랜드',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 브랜드의 모달에 표시할 내용을 입력하세요.
+                scope: '네이밍 · 로고 · 패키지 · 응용 디자인',           // 예: 네이밍 · 로고 · 패키지 · 응용 디자인
+                role: '기획 · 디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Illustrator · ChatGPT',           // 사용 프로그램
+                brandConcept: ``,    // 브랜드가 지향하는 가치 · 타깃 · 핵심 콘셉트
+                identityNotes: ``,   // 로고 · 컬러 · 서체 · 응용 디자인의 전개
                 layout: 'wide',
                 image: 'images/폴드썸네일.png',
                 detailImages: [
-                    'images/ddamyoemyo-cover.jpg'
+                    'images/폴드썸네일.png'
                 ]
             },
         ],
 
         motion: [
-
-            {
-                title: '한국수목원정원관리원 공모전 생성형 AI 활용 (숏폼 부문)',
-                category: 'Video',
-                description: '움직임을 활용한 영상 콘텐츠',
-                layout: 'wide',
-                image: 'images/한수정썸네일.png',
-                detailImages: [
-                    'images/motion-01.jpg'
-                ]
-            },
             {
                 title: 'G-MARKET 2D 30s 모션그래픽',
                 category: 'Motion',
-                description: '타이포그래피 기반 모션그래픽',
+                description: '검색부터 선택까지, 쇼핑의 흐름을 담은 2D 모션그래픽',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+                duration: '00:30',                  // 예: '00:30'
+                role: '기획 · 디자인 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+                tools: 'After Effects · Illustrator · ChatGPT',                     // 예: 'After Effects · Premiere Pro'
+                productionNotes: `온라인 쇼핑 플랫폼 G마켓을 주제로, 검색부터 상품을 발견하고 선택해 장바구니에 담는 과정을
+                하나의 흐름으로 구성한 30초 모션그래픽 광고 영상을 제작했습니다.
+
+                전체 영상은 SEARCH → FIND → CHOOSE → ADD의 쇼핑 경험을 중심으로 전개했으며,
+                검색창에 키워드를 직접 입력하고 삭제하는 타이핑 모션, 상품 카드의 이동과 회전, 아이콘 및
+                타이포그래피 전환 등 다양한 2D 모션을 활용해 짧은 러닝타임 안에서도 화면의 리듬이 끊기지
+                않도록 구성했습니다.
+                
+                특히 ‘사람과 상품을 잇는, 취향과 브랜드를 잇는’이라는 메시지를 중심으로 ‘잇는’이라는 키워드가
+                자연스럽게 연결되도록 연출하고, 검색과 선택이라는 익숙한 쇼핑 행동을 직관적인 그래픽으로
+                시각화했습니다.
+                
+                G마켓의 브랜드 컬러와 쇼핑 UI에서 연상되는 그래픽 요소를 적극적으로 활용하되,
+                실제 웹 화면을 그대로 재현하기보다는 광고 영상에 적합한 타이포그래피와 카드형 레이아웃으로
+                재구성했습니다.
+
+                빠르고 경쾌한 온라인 쇼핑 경험을 표현하는 데 중점을 두었습니다.`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
+                projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+
                 layout: 'wide',
                 image: 'images/지마켓썸네일.png',
+
+                // ★ 여기 수정: 실제 영상 파일 경로로 변경
+                videoSrc: 'videos/지마켓완성.mp4',
+
                 detailImages: [
-                    'images/motion-02.jpg'
+                    'images/지마켓썸네일.png'
+                ]
+            },
+            {
+                title: '한국수목원정원관리원 공모전 생성형 AI 활용 (숏폼 부문)',
+                category: 'Video',
+                description: '한국수목원정원관리원의 역할을 캐릭터로 풀어낸 생성형 AI 숏폼',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+                duration: '00:15',                  // 예: '00:30'
+                role: '기획 · 디자인 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+                tools: 'ChatGPT · Google Flow',                     // 예: 'After Effects · Premiere Pro'
+                productionNotes: `한국수목원정원관리원의 핵심 업무를 친근하게 전달하기 위해
+                산림생태계 관리, 식물 증식 및 복원, 곤충 관리, 희귀·자생식물 보전, 시설물 관리를
+                각각 하나의 캐릭터로 의인화하여 세계관을 구성했습니다.
+
+                자연을 소재로 한 캐릭터의 형태와 색감, 의상, 표정 등을 통일해
+                각기 다른 역할을 지니면서도 하나의 시리즈처럼 보이도록 디자인했습니다.
+
+                AI 이미지 생성 과정에서는 캐릭터의 외형과 배경 스타일이 장면마다 달라지지 않도록
+                프롬프트를 반복적으로 수정하며 일관성을 높였습니다.
+
+                또한 영상으로 확장했을 때 장면이 자연스럽게 연결될 수 있도록
+                카메라 구도와 빛의 방향, 시간대와 장면 전환까지 함께 고려해
+                수목원의 다양한 역할과 자연 보전의 이야기가 하나의 흐름으로 이어지도록 구성했습니다.`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
+                projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+
+                layout: 'wide',
+                image: 'images/한수정썸네일1.png',
+
+                // ★ 여기 수정: 실제 영상 파일 경로로 변경
+                videoSrc: 'videos/생명을 이어가는 하루.mp4',
+
+                detailImages: [
+                    'images/한수정썸네일1.png',
+                    'images/한수정썸네일2.png',
+                    'images/한수정썸네일3.png',
+                    'images/한수정썸네일4.png',
+                    'images/한수정썸네일5.png',
+                    'images/한수정썸네일6.png'
+                ]
+            },
+            {
+                title: 'CORTIS (코르티스) - REDRED 교차편집 (STAGE MIX)',
+                category: 'Video',
+                description: '서로 다른 무대를 안무와 리듬에 맞춰 연결한 ‘REDRED’ 교차편집 영상',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+                duration: '02:41',                  // 예: '00:30'
+                role: '기획 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+                tools: 'Premiere Pro',                     // 예: 'After Effects · Premiere Pro'
+                productionNotes: `서로 다른 무대가 하나의 퍼포먼스처럼 이어지도록 구성한 교차편집 작업입니다.
+                무대마다 달라지는 의상과 조명, 배경을 활용하면서도 안무와 곡의 흐름이 자연스럽게 이어지는 데 중점을 두었습니다.
+
+                장면을 연결할 때는 인물의 위치와 움직임, 카메라 구도를 기준으로 전환 지점을 잡았습니다.
+                멤버의 표정이 드러나는 클로즈업과 안무를 보여주는 단체 장면을 함께 배치해 화면에 변화를 주고,
+                곡의 전개에 따라 퍼포먼스의 에너지가 전달되도록 편집했습니다.
+                
+
+                ⚠️ 저작권 안내 (Copyright Notice)
+                원본 영상 및 음원의 저작권은 각 방송사와 소속사에 있습니다.
+                요청 시 삭제될 수 있습니다.
+                (For portfolio purposes only. All rights belong to the original owners.)`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
+                projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+
+                layout: 'wide',
+                image: 'images/코르티스레드레드썸네일.jpg',
+
+                // ★ 여기 수정: 실제 영상 파일 경로로 변경
+                videoSrc: 'videos/CORTIS (코르티스) - REDRED 교차편집 (STAGE MIX).mp4',
+
+                detailImages: [
+                    'images/코르티스레드레드썸네일.jpg'
                 ]
             }
         ]
-
 
     };
 
@@ -527,7 +748,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const fields = {
             'modal-title': project.title,
             'modal-category': project.category,
-            'modal-description': project.description,
+            'modal-description':
+                typeof project.detailDescription === 'string' &&
+                    project.detailDescription.trim()
+                    ? project.detailDescription.trim()
+                    : project.description,
             'modal-type': project.category,
             'modal-type-2': project.category
         };
@@ -536,6 +761,122 @@ document.addEventListener('DOMContentLoaded', function () {
             const el = document.getElementById(id);
             if (el) el.textContent = fields[id];
         });
+
+        const isMotion = category === 'motion';
+        modal.classList.toggle('modal--motion', isMotion);
+        modal.classList.add('modal--details');
+        // 각 작업의 데이터로 정보 영역을 새로 구성합니다.
+        const facts = modal.querySelector('.modal-facts');
+        const factItems = [
+            ['PROJECT TYPE', project.category],
+            isMotion
+                ? ['RUNNING TIME', project.duration || '러닝타임을 입력해 주세요.']
+                : category === 'branding'
+                    ? ['SCOPE', project.scope || '브랜드 작업 범위를 입력해 주세요.']
+                    : ['FORMAT', project.format || '작업 규격과 매체를 입력해 주세요.'],
+            ['ROLE · CONTRIBUTION', project.role || '담당 역할과 기여도를 입력해 주세요.'],
+            ['TOOLS', project.tools || '사용 프로그램을 입력해 주세요.']
+        ];
+        if (facts) {
+            facts.replaceChildren();
+            factItems.forEach(function (entry) {
+                const item = document.createElement('div');
+                const label = document.createElement('dt');
+                const value = document.createElement('dd');
+                label.textContent = entry[0];
+                value.textContent = entry[1];
+                item.append(label, value);
+                facts.appendChild(item);
+            });
+        }
+        const processHeading = modal.querySelector('.process-heading');
+        if (processHeading) processHeading.hidden = true;
+        const process = document.getElementById('project-process');
+        const sections = isMotion ? [
+            ['기획 의도 · 제작 과정', project.productionNotes,
+                '기획 의도, 표현 방식, 제작 과정에서 고민한 내용을 적어 주세요.']
+        ] : category === 'branding' ? [
+            ['브랜드 콘셉트', project.brandConcept,
+                project.title + '의 브랜드 가치, 타깃과 핵심 콘셉트를 적어 주세요.'],
+            ['아이덴티티 전개', project.identityNotes,
+                '로고의 의미, 컬러와 서체 선정 이유, 패키지와 응용 디자인으로 이어지는 방식을 적어 주세요.']
+        ] : [
+            ['디자인 의도', project.designIntent,
+                project.title + '의 제작 목적, 대상과 전달할 메시지를 적어 주세요.'],
+            ['표현 방식 · 제작 과정', project.designApproach,
+                '이 작업의 컬러, 서체, 이미지와 레이아웃을 선택한 이유와 제작 과정을 적어 주세요.']
+        ];
+        if (process) {
+            process.replaceChildren();
+            sections.forEach(function (section) {
+                const item = document.createElement('div');
+                const heading = document.createElement('dt');
+                const body = document.createElement('dd');
+                heading.textContent = section[0];
+                body.textContent = (section[1] || '').trim() || section[2];
+                item.append(heading, body);
+                process.appendChild(item);
+            });
+        }
+        const sampleNote = modal.querySelector('.sample-note');
+        if (sampleNote) sampleNote.hidden = true;
+        const detailLink = document.getElementById('motion-detail-link');
+        if (detailLink) {
+            detailLink.hidden = true;
+            detailLink.removeAttribute('href');
+            if (project.projectUrl) {
+                try {
+                    const url = new URL(project.projectUrl, window.location.href);
+                    if (['http:', 'https:'].includes(url.protocol)) {
+                        detailLink.href = url.href;
+                        detailLink.hidden = false;
+                    }
+                } catch (error) { /* 주소를 입력할 때까지 버튼 숨김 */ }
+            }
+        }
+        const player = document.getElementById('motion-player');
+        const previousVideo = document.getElementById('modal-video');
+        const hasVideo = isMotion && Boolean(project.videoSrc);
+        if (player) player.hidden = !hasVideo;
+        if (previousVideo) {
+            previousVideo.pause();
+            // 매번 새 플레이어를 사용해 이전 영상의 로딩/오류 이벤트가 섞이지 않게 합니다.
+            const video = document.createElement('video');
+            video.id = 'modal-video';
+            video.controls = true;
+            video.playsInline = true;
+            video.preload = 'metadata';
+            previousVideo.replaceWith(video);
+            const errorNote = document.getElementById('modal-video-error');
+            if (errorNote) errorNote.hidden = true;
+            if (hasVideo) {
+                video.poster = project.image;
+                video.addEventListener('loadedmetadata', function () {
+                    if (errorNote) errorNote.hidden = true;
+                });
+                video.addEventListener('error', function () {
+                    if (!video.error || !errorNote || !video.isConnected) return;
+                    const reasons = {
+                        1: '영상 로딩이 중단됐습니다.',
+                        2: '영상 파일을 읽지 못했습니다.',
+                        3: '영상 데이터를 재생하지 못했습니다.',
+                        4: '영상 파일을 찾지 못했거나 지원되지 않는 형식입니다.'
+                    };
+                    errorNote.textContent = (reasons[video.error.code] ||
+                        '영상을 불러오지 못했습니다.') + ' 파일: ' + project.videoSrc;
+                    errorNote.hidden = false;
+                });
+                // index.html을 기준으로 해석되는 기존 프로젝트 경로를 그대로 사용합니다.
+                video.src = project.videoSrc;
+                video.load();
+            }
+        }
+        const gallery = document.getElementById('project-detail-swiper');
+        if (gallery) gallery.hidden = hasVideo;
+        const galleryMeta = modal.querySelector('.modal-swiper-meta');
+        if (galleryMeta) galleryMeta.hidden = hasVideo;
+        const description = modal.querySelector('.modal-description');
+        if (description) description.hidden = false;
 
         const wrapper = document.getElementById('modal-slides');
         if (!wrapper) return;
@@ -628,7 +969,7 @@ document.addEventListener('DOMContentLoaded', function () {
             container.style.transform = 'none';
         }
 
-        initSwiper();
+        if (!hasVideo) initSwiper();
 
         const close = modal.querySelector('.modal-close');
 
@@ -700,6 +1041,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         modalClosing = true;
+        const video = document.getElementById('modal-video');
+        if (video) video.pause();
 
         const overlay = modal.querySelector('.modal-overlay');
         const container = modal.querySelector('.modal-container');
