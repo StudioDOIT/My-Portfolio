@@ -92,20 +92,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 format: 'A3',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
                 role: '기획 · 디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
                 tools: 'Illustrator',           // 사용 프로그램
-                designIntent: `가장 먼저 확인해야 하는 정보를
-                중심으로 콘텐츠를 구성하고,
-                한눈에 핵심 내용을 파악할 수 있도록
-                명확한 정보 위계를 적용했습니다.
+                designIntent: `청년층을 대상으로 하는 홍보물인 만큼 
+                성장과 시작을 상징하는 초록색 컬러를 
+                메인으로 사용하였습니다.
 
 `,    // 작업의 목적 · 대상 · 전달할 메시지
-                designApproach: `청년층을 대상으로 하는 홍보물인 만큼
-                공공기관 특유의 신뢰감은 유지하면서도
-                밝고 역동적인 그래픽 요소와 컬러를 활용해
-                친근하고 적극적인 분위기를 표현했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
+                designApproach: `공공기관 홍보물의 기본적인 정보 전달 구조는 
+                유지하면서도 활기찬 청년을 보여주는 일러스트 요소를
+                활용하여 친근하고 적극적인 분위기를 표현했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'portrait',
-                image: 'images/청년창업지원포스터1.jpg',
+                image: 'images/청년창업지원포스터1.png',
                 detailImages: [
-                    'images/visual-05.jpg'
+                    'images/청년창업지원포스터2.png',
+                    'images/청년창업지원포스터1.png'
                 ]
             },
             {
@@ -118,18 +117,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 format: 'A3',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
                 role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
                 tools: 'Illustrator',           // 사용 프로그램
-                designIntent: `가독성 높은 레이아웃으로 배치하여 
-                핵심 정보를 빠르게 확인할 수 있도록
-                설계하였습니다.
+                designIntent: `리디자인에서는 제목의 '업'을 'UP'으로 
+                치환한 타이틀을 가장 먼저 보이도록 배치하여 
+                특강 참여가 참여자를 긍정적인 방향으로 
+                이끌어줄 수 있다는 느낌을 주도록 하였습니다.
 
 `,    // 작업의 목적 · 대상 · 전달할 메시지
-                designApproach: `공공기관 관련 콘텐츠에 어울리는
-                신뢰감 있고 정돈된 인상을 유지하는 데
-                중점을 두었습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
+                designApproach: `또한, 레드 계열의 컬러를 사용하여
+                가독성에 부담을 준다고 판단하여
+                블루 계열의 컬러를 사용함으로써
+                이를 개선하였습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'portrait',
-                image: 'images/공기업취업특강포스터1.jpg',
+                image: 'images/공기업취업특강포스터1.png',
                 detailImages: [
-                    'images/romaine-poster.jpg'
+                    'images/공기업취업특강포스터2.png',
+                    'images/공기업취업특강포스터1.png'
                 ]
             },
             {
@@ -142,27 +144,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 format: 'A4',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
                 role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
                 tools: 'Illustrator · ChatGPT',           // 사용 프로그램
-                designIntent: `연세 후배사랑 장학기금 모금 캠페인의 목적과 신뢰감을
-                효과적으로 전달할 수 있도록 학교의 아이덴티티 컬러인
-                블루를 중심으로 전체적인 톤앤매너를 구성했습니다.
-
-                캠페인의 메시지와 일러스트를 활용해 후배를
-                응원하는 따뜻한 의미를 강조하고, 내지까지 자연스럽게
-                이어질 수 있도록 통일된 그래픽 요소와 레이아웃을 적용했습니다.
+                designIntent: `캠페인의 목적과 신뢰감을 효과적으로 
+                전달하기 위해 블루 컬러를 중심으로 전체적인 
+                톤앤매너를 구성했습니다.
 
 `,    // 작업의 목적 · 대상 · 전달할 메시지
                 designApproach: `
 
-                내지에서는 장학금 유형과 기념품 안내, 약정서 등 많은 정보를
-                쉽게 확인할 수 있도록 내용별 영역을 명확하게 구분하고 시각적
-                위계를 정리했습니다.
-
-                특히 설명 영역과 작성 영역의 성격을 구분해
-                가독성을 높이고, 사용자가 필요한 정보를 빠르게 찾고 자연스럽게
-                약정서 작성까지 이어갈 수 있도록 설계했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
+                외지에서는 캠페인의 메시지와 일러스트를 활용해 후배를
+                응원하는 따뜻한 의미를 강조하고, 내지에서는 기부자가
+                원하는 장학금 유형을 선택하여 약정서 작성까지 빠르게
+                이어갈 수 있도록 설계했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'wide',
-                image: 'images/연세대2단리플렛1.png',
+                image: 'images/연세대2단리플렛5.png',
                 detailImages: [
+                    'images/연세대2단리플렛5.png',
                     'images/연세대2단리플렛1.png',
                     'images/연세대2단리플렛2.png',
                     'images/연세대2단리플렛3.jpg',
@@ -179,20 +175,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 format: 'A4',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
                 role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
                 tools: 'Illustrator · ChatGPT',           // 사용 프로그램
-                designIntent: `딜리버스 서비스에 대한 내용을 쉽게 전달하기 위해
-                접지형 인쇄물의 특성을 고려해 표지, 브랜드 소개,
-                주요 메뉴 및 프로모션 정보가 자연스럽게 이어지도록
-                콘텐츠 흐름을 구성했으며, 펼쳤을 때 각 면이 하나의
-                통일된 레이아웃으로 연결되도록 디자인했습니다.
+                designIntent: `외지에서는 실제 스타벅스의 UI를 첨부하여 사용자가 직접 화면을 따라 딜리버스 서비스를 접수할 수 있도록 유도했습니다.
 
 `,    // 작업의 목적 · 대상 · 전달할 메시지
-                designApproach: `특히 3단 접지 구조에서 사용자가 정보를 확인하는
-                순서를 고려해 표지에서 관심을 유도하고, 내부에서는
-                핵심 내용을 빠르게 파악할 수 있도록 시각적 위계와
-                가독성을 중점적으로 설계했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
+                designApproach: `내지에서는 많은 정보량을 압축하여 한눈에 이해할 수 있도록 메뉴를 아이콘으로 만들어 디자인했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'wide',
-                image: 'images/스타벅스3단리플렛1.png',
+                image: 'images/스타벅스3단리플렛5.png',
                 detailImages: [
+                    'images/스타벅스3단리플렛5.png',
                     'images/스타벅스3단리플렛1.png',
                     'images/스타벅스3단리플렛2.png',
                     'images/스타벅스3단리플렛3.jpg',
@@ -209,21 +199,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 format: '1080 * 1080 px',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
                 role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
                 tools: 'Illustrator',           // 사용 프로그램
-                designIntent: `지원 대상, 신청 방법, 지급 방식 등 핵심 정보를
-                중심으로 내용을 단계별로 정리하고, 복잡한 정책
-                정보를 한눈에 파악할 수 있도록 직관적인 정보 구조를
-                구성했습니다.
-
-                특히 이용자가 실제로 궁금해할 정보를 중심으로
-                배치해 정보 전달성과 가독성을 함께 높였습니다.
+                designIntent: `복잡한 정책 정보를 한눈에 파악할 수 있도록
+                페이지의 내용마다 컬러를 다르게 사용하였습니다.
+                중요한 내용은 레드 컬러와 크기 대비를 통해
+                자연스럽게 강조했습니다.
 `,    // 작업의 목적 · 대상 · 전달할 메시지
-                designApproach: `공공정보 콘텐츠의 신뢰감을 유지하면서도
-                딱딱한 인상을 줄이기 위해 명확한 타이포그래피와
-                간결한 그래픽 요소를 활용했으며, 중요한 내용은
-                컬러와 크기 대비를 통해 자연스럽게 강조했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
+                designApproach: `첫 페이지에서 시선을 유도하기 위해
+                큰 사이즈의 타이포그래피를 적용하였습니다.
+                신청을 유도하고, 정보를 직관적으로 인지할 수 있도록
+                일러스트 요소를 활용했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'portrait',
                 image: 'images/민생회복1.jpg',
                 detailImages: [
+                    'images/민생회복7.png',
+                    'images/민생회복8.png',
                     'images/민생회복1.jpg',
                     'images/민생회복2.jpg',
                     'images/민생회복3.jpg',
@@ -265,6 +254,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
         branding: [
             {
+                slug: 'fold',
+                title: 'fold',
+                category: 'Branding',
+                description: '겹겹이 쌓이는 일상의 따뜻함과 소중함을 담은 베이커리 브랜드',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 브랜드의 모달에 표시할 내용을 입력하세요.
+                scope: '네이밍 · 로고 · 패키지 · 응용 디자인',           // 예: 네이밍 · 로고 · 패키지 · 응용 디자인
+                role: '기획 · 디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Illustrator · ChatGPT',           // 사용 프로그램
+                brandConcept: ``,    // 브랜드가 지향하는 가치 · 타깃 · 핵심 콘셉트
+                identityNotes: ``,   // 로고 · 컬러 · 서체 · 응용 디자인의 전개
+                layout: 'wide',
+                image: 'images/fold-thumb.png',
+                detailImages: [
+                    'images/fold-thumb.png'
+                ]
+            },
+            {
+                slug: 'burgerclub',
                 title: 'BURGERCLUB',
                 category: 'Branding',
                 description: '편하게 맛있는 버거를 마음껏 먹고 싶은 사람들을 위한 수제버거 브랜드',
@@ -280,24 +289,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 image: 'images/버거클럽썸네일.png',
                 detailImages: [
                     'images/버거클럽썸네일.png'
-                ]
-            },
-            {
-                title: 'fold',
-                category: 'Branding',
-                description: '겹겹이 쌓이는 일상의 따뜻함과 소중함을 담은 베이커리 브랜드',
-                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-                detailDescription: ``,
-                // 이 브랜드의 모달에 표시할 내용을 입력하세요.
-                scope: '네이밍 · 로고 · 패키지 · 응용 디자인',           // 예: 네이밍 · 로고 · 패키지 · 응용 디자인
-                role: '기획 · 디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
-                tools: 'Illustrator · ChatGPT',           // 사용 프로그램
-                brandConcept: ``,    // 브랜드가 지향하는 가치 · 타깃 · 핵심 콘셉트
-                identityNotes: ``,   // 로고 · 컬러 · 서체 · 응용 디자인의 전개
-                layout: 'wide',
-                image: 'images/폴드썸네일.png',
-                detailImages: [
-                    'images/폴드썸네일.png'
                 ]
             },
         ],
@@ -420,6 +411,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
     };
 
+    // 상세 페이지도 같은 데이터를 사용합니다. 설명과 이미지는 workData에서 수정하세요.
+    if (document.body.dataset.page === 'branding-detail') {
+        document.dispatchEvent(new CustomEvent('branding:ready', {
+            detail: workData.branding
+        }));
+        return;
+    }
+
+    // 유튜브 영상은 모달 대신 새 탭에서 재생합니다.
+    function youtubeWatchUrl(project) {
+        const id = project && project.youtubeId;
+        return /^[A-Za-z0-9_-]{11}$/.test(id || '')
+            ? 'https://www.youtube.com/watch?v=' + id : '';
+    }
+
+    function brandingUrl(project) {
+        // fold → 직접 만든 브랜딩 상세 페이지
+        if (project.slug === 'fold') {
+            return './fold-branding.html';
+        }
+
+        // 다른 브랜드 → 기존 상세 페이지
+        return './branding.html?project=' + encodeURIComponent(project.slug);
+    }
+
     /* =========================================================
        04. Work 요소
        ========================================================= */
@@ -516,11 +532,19 @@ document.addEventListener('DOMContentLoaded', function () {
             card.dataset.category = category;
             card.dataset.index = entry.index;
 
+            const videoUrl = '';
+            const isLink = category === 'branding';
+            const cardTag = isLink ? 'a' : 'button';
+            const linkAttributes = videoUrl
+                ? 'href="' + videoUrl + '" target="_blank" rel="noopener noreferrer"'
+                : category === 'branding'
+                    ? 'href="' + brandingUrl(project) + '"' : 'type="button"';
+
             card.innerHTML = `
-                <button
-                    type="button"
+                <${cardTag}
+                    ${linkAttributes}
                     class="work-card-button"
-                    aria-label="${project.title} 프로젝트 보기"
+                    aria-label="${project.title} ${videoUrl ? 'YouTube에서 보기 (새 탭)' : '프로젝트 보기'}"
                 >
                     <div class="work-card-image">
                         <img
@@ -536,7 +560,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <h3>${project.title}</h3>
                         <p>${project.description}</p>
                     </div>
-                </button>
+                </${cardTag}>
             `;
 
             wrapper.appendChild(card);
@@ -626,10 +650,15 @@ document.addEventListener('DOMContentLoaded', function () {
             const button = card.querySelector('.work-card-button');
             if (!button) return;
 
-            button.addEventListener('click', function () {
+            button.addEventListener('click', function (event) {
                 const swiper = workSwipers[card.dataset.category];
 
-                if (swiper && !swiper.allowClick) return;
+                if (swiper && !swiper.allowClick) {
+                    event.preventDefault();
+                    return;
+                }
+                // 브랜딩과 유튜브 카드는 링크의 기본 동작을 사용합니다.
+                if (button.tagName === 'A') return;
 
                 openProjectModal(
                     card.dataset.category,
@@ -715,7 +744,13 @@ document.addEventListener('DOMContentLoaded', function () {
             workData[category] &&
             workData[category][index];
 
-        if (!project || !modal || modalClosing) return;
+        if (!project) return;
+        // 상단 갤러리에서 브랜딩을 눌러도 같은 상세 페이지로 이동합니다.
+        if (category === 'branding') {
+            window.location.assign(brandingUrl(project));
+            return;
+        }
+        if (!modal || modalClosing) return;
 
         const overlay = modal.querySelector('.modal-overlay');
         const container = modal.querySelector('.modal-container');
@@ -843,7 +878,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (previousVideo) {
             stopModalVideo(previousVideo);
             // 매번 새 플레이어를 사용해 이전 영상의 로딩/오류 이벤트가 섞이지 않게 합니다.
-            const video = document.createElement(hasVideo && youtubeId ? 'iframe' : 'video');
+            const video = document.createElement(hasVideo && youtubeId ? 'div' : 'video');
             video.id = 'modal-video';
             video.controls = true;
             video.playsInline = true;
@@ -852,12 +887,32 @@ document.addEventListener('DOMContentLoaded', function () {
             const errorNote = document.getElementById('modal-video-error');
             if (errorNote) errorNote.hidden = true;
             if (hasVideo && youtubeId) {
-                video.title = project.title + ' — YouTube 영상';
-                video.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-                video.allowFullscreen = true;
-                video.referrerPolicy = 'strict-origin-when-cross-origin';
-                video.style.cssText = 'display:block;width:100%;height:auto;aspect-ratio:16/9;min-height:200px;border:0;background:#000;';
-                video.src = 'https://www.youtube.com/embed/' + youtubeId + '?playsinline=1&rel=0';
+                // 영상 소개는 모달에서 확인하고, 재생은 유튜브 새 탭에서 합니다.
+                video.style.cssText = 'display:block;width:100%;';
+                const url = youtubeWatchUrl(project);
+                const thumbnailLink = document.createElement('a');
+                thumbnailLink.href = url;
+                thumbnailLink.target = '_blank';
+                thumbnailLink.rel = 'noopener noreferrer';
+                thumbnailLink.setAttribute('aria-label', project.title + ' — 유튜브에서 영상 보기 (새 탭)');
+                thumbnailLink.style.cssText = 'position:relative;display:block;width:100%;overflow:hidden;border-radius:12px;background:#111;text-decoration:none;';
+                const thumbnail = document.createElement('img');
+                thumbnail.src = project.image;
+                thumbnail.alt = project.title + ' 영상 썸네일';
+                thumbnail.style.cssText = 'display:block;width:100%;height:auto;';
+                const playIcon = document.createElement('span');
+                playIcon.textContent = '▶';
+                playIcon.setAttribute('aria-hidden', 'true');
+                playIcon.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:68px;height:68px;padding-left:4px;box-sizing:border-box;border-radius:50%;background:rgba(0,0,0,.65);color:#fff;font-size:26px;pointer-events:none;';
+                thumbnailLink.append(thumbnail, playIcon);
+                const watchLink = document.createElement('a');
+                watchLink.href = url;
+                watchLink.target = '_blank';
+                watchLink.rel = 'noopener noreferrer';
+                watchLink.textContent = '유튜브에서 영상 보기 ↗';
+                watchLink.setAttribute('aria-label', project.title + ' — 유튜브에서 영상 보기 (새 탭)');
+                watchLink.style.cssText = 'display:inline-flex;align-items:center;justify-content:center;margin-top:16px;padding:12px 20px;border-radius:999px;background:#222;color:#fff;font-size:14px;font-weight:600;line-height:1.5;text-decoration:none;';
+                video.append(thumbnailLink, watchLink);
             } else if (hasVideo) {
                 video.poster = project.image;
                 video.addEventListener('loadedmetadata', function () {
@@ -1188,7 +1243,8 @@ document.addEventListener('DOMContentLoaded', function () {
             renderProjects(category);
         });
 
-        switchCategory('visual');
+        switchCategory(new URLSearchParams(window.location.search).get('category') === 'branding'
+            ? 'branding' : 'visual');
 
         workTabs.forEach(function (button) {
             const category = button.dataset.category;
