@@ -20,7 +20,6 @@ body {
     margin: 0;
     background: var(--bg);
     color: var(--ink);
-    font-family: 'DM Sans', 'Noto Sans KR', sans-serif;
     font-size: 16px;
 }
 
@@ -82,7 +81,7 @@ nav a {
 }
 
 nav a.active:after {
-    content: '';
+    content: "";
     height: 3px;
     position: absolute;
     left: 0;
@@ -104,13 +103,9 @@ sup {
 .section-kicker {
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
-    letter-spacing: .08em;
 }
 
 .hero h1 {
-    font-family: 'Manrope', sans-serif;
-    font-size: clamp(68px, 9.9vw, 162px);
     position: relative;
 }
 
@@ -142,7 +137,6 @@ sup {
 }
 
 .hero-bottom p {
-    line-height: 1.85;
     margin: 0;
 }
 
@@ -189,7 +183,6 @@ sup {
 }
 
 .art strong {
-    font-family: 'Manrope', sans-serif;
     font-size: clamp(35px, 5vw, 74px);
     line-height: .97;
     letter-spacing: -.07em;
@@ -290,7 +283,6 @@ sup {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    font-size: 12px;
     letter-spacing: .035em;
 }
 
@@ -334,7 +326,6 @@ sup {
 }
 
 h2 {
-    font-family: Manrope, sans-serif;
     font-size: clamp(40px, 4.6vw, 72px);
     font-weight: 500;
     line-height: 1.13;
@@ -359,7 +350,6 @@ h2 {
 }
 
 .sample-note {
-    font-size: 12px !important;
     color: var(--muted);
     line-height: 1.65;
 }
@@ -375,7 +365,6 @@ h2 {
     border: 1px solid var(--line);
     border-radius: 30px;
     padding: 8px 12px;
-    font-size: 12px;
 }
 
 .work-heading {
@@ -472,7 +461,6 @@ h2 {
 }
 
 .contact h2 {
-    font-size: clamp(70px, 13vw, 180px);
     display: flex;
     align-items: center;
     gap: .22em;
@@ -501,7 +489,6 @@ footer {
     padding: 28px 4.5%;
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
     gap: 20px;
 }
 
@@ -618,17 +605,9 @@ footer {
         gap: 22px;
     }
 
-    .eyebrow {
-        font-size: 10px;
-    }
-
     .eyebrow span:last-child {
         max-width: 140px;
         text-align: right;
-    }
-
-    .hero h1 {
-        letter-spacing: -.07em;
     }
 
     .star {
@@ -657,32 +636,8 @@ footer {
         padding: 64px 5%;
     }
 
-    .section-kicker {
-        font-size: 10px;
-    }
-
-    .about-copy .intro {
-        font-size: 21px;
-    }
-
-    .work-grid {
-        gap: 32px 16px;
-    }
-
     .project-button .art {
         height: 260px;
-    }
-
-    .project-info h3 {
-        font-size: 17px;
-    }
-
-    .work-tabs {
-        gap: 26px;
-    }
-
-    .work-tabs button {
-        font-size: 18px;
     }
 
     .contact h2 {
@@ -756,10 +711,6 @@ footer {
         gap: 20px;
     }
 
-    .wordmark {
-        font-size: 38px;
-    }
-
     .section-kicker span:last-child {
         letter-spacing: 0;
     }
@@ -776,14 +727,10 @@ footer {
     }
 }
 
-body {
-    font-family: 'DM Sans', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-}
-
 h2,
 .hero h1,
 .art strong {
-    font-family: 'Manrope', 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    font-family: "Manrope", "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
 }
 
 button:focus-visible,
@@ -830,7 +777,6 @@ footer {
 
 .hero-bottom p,
 .about-copy>p:not(.intro) {
-    font-size: 16px;
     line-height: 1.9;
 }
 
@@ -879,7 +825,7 @@ footer {
 
 @keyframes blink {
     50% {
-    opacity: 0;
+        opacity: 0;
     }
 }
 
@@ -1077,20 +1023,8 @@ footer {
 }
 
 @media (max-width: 800px) {
-    .hero h1 {
-        padding-right: 24px;
-    }
-
     .hero-bottom {
         gap: 20px;
-    }
-
-    .hero-bottom p {
-        font-size: 16px;
-    }
-
-    .hero h1 .star {
-        right: 0;
     }
 
     .conversation-top>span:last-child {
@@ -1137,10 +1071,6 @@ footer {
         font-size: 14px;
     }
 
-    .hero h1 {
-        padding-right: 0;
-    }
-
     .hero h1 .star {
         display: none;
     }
@@ -1156,10 +1086,6 @@ footer {
     .round-link span {
         width: 40px;
         height: 40px;
-    }
-
-    .conversation {
-        border-radius: 18px;
     }
 
     .conversation-top {
@@ -1200,10 +1126,6 @@ footer {
 
     .section-kicker span:last-child {
         text-align: right;
-    }
-
-    .work-tabs {
-        gap: 22px;
     }
 
     .slider-bottom {
@@ -1587,10 +1509,6 @@ footer {
 
     .work-heading h2 {
         font-size: 42px;
-    }
-
-    .work-grid {
-        gap: 34px;
     }
 
     .contact>p.contact-question {
@@ -2248,21 +2166,9 @@ footer {
     overflow-wrap: anywhere;
 }
 
-@media (max-width: 900px) {
-    #panel-visual.work-grid--mixed {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 40px 20px;
-    }
-}
-
 @media (max-width: 600px) {
     #panel-visual.work-grid--mixed {
         grid-template-columns: minmax(0, 1fr);
-        gap: 36px;
-    }
-
-    #panel-visual.work-grid--mixed .work-card--wide {
-        grid-column: span 1;
     }
 }
 
@@ -2439,10 +2345,6 @@ footer {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .social-link {
-        transition: none;
-    }
-
     .social-link:hover {
         transform: none;
     }
@@ -2526,11 +2428,6 @@ footer {
 @media (min-width: 801px) {
     #about .about-grid {
         column-gap: 6%;
-    }
-
-    #about .about-grid .portrait {
-        width: 100%;
-        max-width: 500px;
     }
 }
 
@@ -2643,7 +2540,6 @@ footer {
     font-size: 13px;
     white-space: nowrap;
     margin-right: 12px;
-    font-variant-numeric: tabular-nums;
 }
 
 .work-carousel-navigation button {
@@ -2677,8 +2573,6 @@ footer {
 #main .conversation.conversation--expanded {
     width: 100%;
     max-width: 860px;
-    border-radius: 28px;
-    text-align: center;
 }
 
 #main .conversation-top {
@@ -2692,13 +2586,8 @@ footer {
     display: none;
 }
 
-#main .prompt-display {
-    justify-content: center;
-}
-
 #main .prompt-display p {
     min-width: 0;
-    font-size: clamp(21px, 2.4vw, 32px);
     overflow-wrap: anywhere;
 }
 
@@ -2732,10 +2621,7 @@ footer {
 
 @media (max-width: 520px) {
     #main .conversation.conversation--expanded {
-        margin-top: 16px;
         margin-bottom: 40px;
-        padding: 24px 16px;
-        border-radius: 22px;
     }
 
     #main .conversation-top {
@@ -2744,7 +2630,6 @@ footer {
 
     #main .question-options {
         flex-direction: column;
-        align-items: stretch;
     }
 }
 
@@ -2766,7 +2651,6 @@ footer {
 
 #main .conversation.conversation--expanded {
     justify-self: center;
-    width: min(100%, 860px);
 }
 
 #main .hero-bottom {
@@ -2810,7 +2694,6 @@ footer {
 
 @media (max-width: 800px) {
     #main.hero {
-        min-height: calc(100svh - 74px);
         row-gap: 28px;
     }
 }
@@ -2824,14 +2707,9 @@ footer {
 #main .hero-heading-group h1,
 #contact .contact-title {
     display: block;
-    font-family: 'Manrope', 'Noto Sans KR', sans-serif;
-    font-size: clamp(30px, 4.8vw, 72px);
-    font-weight: 500;
-    line-height: 1.35;
-    letter-spacing: -.065em;
+    font-family: "Manrope", "Noto Sans KR", sans-serif;
     text-align: center;
     padding: 0;
-    margin: 32px 0 0;
     word-break: keep-all;
     overflow-wrap: anywhere;
 }
@@ -2893,12 +2771,7 @@ footer {
 }
 
 #contact #contact-prompt {
-    display: flex;
-    align-items: center;
-    min-height: 104px;
     margin: 0;
-    padding: 20px 0;
-    font-size: clamp(21px, 2.4vw, 32px);
     font-weight: 400;
     letter-spacing: -.04em;
     line-height: 1.5;
@@ -2907,9 +2780,7 @@ footer {
 }
 
 #contact .contact-prompt-hint {
-    margin: 0 0 22px;
     font-size: 14px;
-    line-height: 1.7;
 }
 
 #contact .contact-start {
@@ -2938,15 +2809,8 @@ footer {
 }
 
 @media (max-width: 520px) {
-    #main .conversation.conversation--expanded,
-    #contact .contact-conversation {
-        padding: 24px 16px;
-        border-radius: 22px;
-    }
-
     #main .hero-heading-group h1,
     #contact .contact-title {
-        font-size: clamp(26px, 6.4vw, 34px);
         margin-top: 24px;
     }
 
@@ -2962,10 +2826,7 @@ footer {
 #main .conversation.conversation--expanded,
 #contact .contact-conversation {
     padding: 0;
-    border: 0;
     border-radius: 0;
-    background: transparent;
-    box-shadow: none;
 }
 
 #main .prompt-display,
@@ -2996,7 +2857,6 @@ footer {
 #main .prompt-hint,
 #contact .contact-prompt-hint {
     margin: 16px 0 20px;
-    color: var(--muted);
     line-height: 1.7;
 }
 
@@ -3125,7 +2985,6 @@ header .header-note {
     position: static;
     top: auto;
     align-self: auto;
-    width: min(100%, 880px);
     margin: 68px auto 0;
     padding: 0;
 }
@@ -3254,7 +3113,6 @@ header .header-note {
 
 #process .approach-grid h3 {
     margin: 0 0 14px;
-    font-weight: 500;
     letter-spacing: -.035em;
 }
 
@@ -3267,7 +3125,6 @@ header .header-note {
     min-height: calc(100svh - 92px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 96px 4.5%;
 }
 
@@ -3314,7 +3171,6 @@ header .header-note {
 }
 
 #work .work-grid--carousel {
-    --work-image-height: min(48svh, 540px);
     position: relative;
     padding-left: 72px;
     padding-right: 72px;
@@ -3326,7 +3182,6 @@ header .header-note {
 }
 
 .work-card-category::before {
-    content: "";
     width: 6px;
     height: 6px;
     margin-right: 8px;
@@ -3348,7 +3203,6 @@ header .header-note {
     margin: 0;
     border: 0;
     border-radius: 0;
-    background: transparent;
     color: var(--lavender-dark);
     box-shadow: none;
     backdrop-filter: none;
@@ -3370,7 +3224,6 @@ header .header-note {
 #work .work-carousel-prev::after,
 #work .work-carousel-next::before,
 #work .work-carousel-next::after {
-    content: "";
     position: absolute;
     top: 50%;
     background: currentColor;
@@ -3403,7 +3256,6 @@ header .header-note {
 
 #work .work-carousel-prev:hover,
 #work .work-carousel-next:hover {
-    background: transparent;
     border-color: transparent;
     color: var(--lavender-dark);
     transform: translateY(-50%);
@@ -3418,7 +3270,6 @@ header .header-note {
     min-height: calc(100svh - 92px);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 100px 4.5%;
 }
 
@@ -3450,12 +3301,10 @@ header .header-note {
     gap: 10px;
     margin: 0 0 18px;
     color: var(--ink);
-    font-weight: 700;
     line-height: 1.4;
 }
 
 #about .about-fact dt::before {
-    content: "";
     width: 7px;
     height: 7px;
     border-radius: 50%;
@@ -3465,26 +3314,16 @@ header .header-note {
 
 #about .about-fact dt>span {
     color: var(--lavender-dark);
-    font-weight: 600;
     line-height: 1.2;
     letter-spacing: 0;
 }
 
 #about .education-name {
     color: var(--ink);
-    font-size: 16px;
-    font-weight: 600;
 }
 
 #about .education-detail {
     color: var(--muted);
-    font-size: 13px;
-    font-weight: 400;
-}
-
-#about .tool-list li,
-#about .certificate-name {
-    font-weight: 500;
 }
 
 .mbti-type {
@@ -3615,7 +3454,6 @@ a:focus-visible {
     }
 
     #process {
-        min-height: auto;
         display: block;
         padding: 88px 5%;
     }
@@ -3626,23 +3464,12 @@ a:focus-visible {
 
     #main .eyebrow {
         width: 100%;
-        margin-bottom: 22px;
         font-size: 10px;
-        letter-spacing: .1em;
-    }
-
-    #main .prompt-display {
-        min-height: 76px;
-        padding: 18px 20px;
     }
 
     #main .prompt-hint {
         margin-top: 22px;
         margin-bottom: 22px;
-    }
-
-    #main .question-options {
-        gap: 10px;
     }
 
     #main .hero-bottom,
@@ -3662,8 +3489,6 @@ a:focus-visible {
 
     #process .process-heading {
         display: block;
-        margin-top: 42px;
-        margin-bottom: 48px;
     }
 
     #process .process-heading p {
@@ -3711,10 +3536,8 @@ a:focus-visible {
 
 @media (max-width: 520px) {
     #main .eyebrow {
-        margin-bottom: 20px;
         gap: 16px;
         font-size: 9px;
-        letter-spacing: .08em;
     }
 
     #about .about-fact dt {
@@ -3743,8 +3566,6 @@ a:focus-visible {
 
 #about .about-profile-copy h2 {
     margin: 0;
-    font-size: clamp(28px, 2.7vw, 40px);
-    font-weight: 500;
     letter-spacing: -.045em;
     word-break: keep-all;
 }
@@ -3781,9 +3602,6 @@ a:focus-visible {
 
 #work .work-heading h2,
 #about .about-heading h2 {
-    font-family: Manrope, sans-serif;
-    font-size: clamp(40px, 4.6vw, 72px);
-    font-weight: 500;
     margin: 0;
 }
 
@@ -3795,10 +3613,6 @@ a:focus-visible {
 #about .about-fact dt::before {
     content: none;
     display: none;
-}
-
-#work .work-grid--carousel {
-    --work-image-height: min(48svh, 540px);
 }
 
 #work .work-grid--carousel .work-card,
@@ -3857,17 +3671,9 @@ a:focus-visible {
     #about {
         padding-top: 88px;
     }
-
-    #main .conversation.conversation--expanded {
-        transform: translateY(-44px);
-    }
 }
 
 @media (max-width: 700px) {
-    #work .work-grid--carousel {
-        padding-inline: 58px;
-    }
-
     #work .work-carousel-prev,
     #work .work-carousel-next {
         width: 44px;
@@ -3942,21 +3748,12 @@ a:focus-visible {
     display: none;
 }
 
-@media (max-width: 700px) {
-    #work .work-carousel-prev::before,
-    #work .work-carousel-next::before {
-        width: 24px;
-        height: 44px;
-    }
-}
-
 #contact #contact-action .contact-label-plain,
 #contact #contact-action .contact-email-plain {
     display: block;
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 400;
+    font-family: "Noto Sans KR", sans-serif;
     font-style: normal;
     line-height: 1.8;
     letter-spacing: 0;
@@ -3986,7 +3783,6 @@ a:focus-visible {
 @media (min-width: 801px) {
     #about .about-grid {
         grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
-        column-gap: clamp(32px, 4vw, 56px);
     }
 
     #about .about-profile,
@@ -3999,12 +3795,6 @@ a:focus-visible {
         width: 100%;
         max-width: 440px;
         margin-inline: auto;
-    }
-}
-
-@media (max-width: 800px) {
-    #about .about-grid {
-        max-width: 620px;
     }
 }
 
@@ -4024,7 +3814,7 @@ a:focus-visible {
 }
 
 body {
-    font-family: 'Noto Sans KR', Arial, sans-serif;
+    font-family: "Noto Sans KR", Arial, sans-serif;
 }
 
 header {
@@ -4033,7 +3823,6 @@ header {
 
 header nav a {
     font-size: 15px;
-    font-weight: 500;
 }
 
 .header-note {
@@ -4059,7 +3848,6 @@ header nav a {
 }
 
 #main .hero-heading-group h1 {
-    font-size: clamp(36px, 4.8vw, 70px);
     word-break: keep-all;
 }
 
@@ -4070,7 +3858,6 @@ header nav a {
 }
 
 #main .conversation.conversation--expanded {
-    width: min(100%, 780px);
     margin-top: 42px;
     transform: none;
     border: 0;
@@ -4090,7 +3877,6 @@ header nav a {
 
 #main .prompt-display #prompt-text {
     font-size: clamp(20px, 2.2vw, 26px);
-    font-weight: 400;
     letter-spacing: -.035em;
 }
 
@@ -4137,8 +3923,7 @@ header nav a {
 #process .process-heading h2,
 #work .work-heading h2,
 #about .about-heading h2 {
-    font-family: Arial, 'Noto Sans KR', sans-serif;
-    font-size: clamp(36px, 4vw, 58px);
+    font-family: Arial, "Noto Sans KR", sans-serif;
     line-height: 1.15;
 }
 
@@ -4183,10 +3968,6 @@ header nav a {
     gap: 56px;
 }
 
-#about .about-profile-copy h2 {
-    font-size: clamp(24px, 2.4vw, 32px);
-}
-
 #about .about-profile-copy .about-principle {
     font-size: 15px;
 }
@@ -4213,7 +3994,6 @@ header nav a {
     font-family: Arial, sans-serif;
     font-variant-numeric: tabular-nums;
     font-size: 14px;
-    font-weight: 600;
     white-space: nowrap;
 }
 
@@ -4242,20 +4022,12 @@ header nav a {
         transform: none;
     }
 
-    #main .hero-heading-group h1 {
-        line-height: 1.35;
-    }
-
     #main .conversation.conversation--expanded {
         margin-top: 36px;
     }
 
     #main .hero-bottom {
         margin-top: 32px;
-    }
-
-    #process .approach-grid {
-        gap: 40px;
     }
 
     #process .process-visual {
@@ -4297,13 +4069,7 @@ header nav a {
     }
 
     #main .question-options button {
-        width: 100%;
-        justify-content: space-between;
         text-align: left;
-    }
-
-    #about .about-grid {
-        max-width: 100%;
     }
 }
 
@@ -4325,7 +4091,6 @@ header nav a {
 
 #work .work-card-info p,
 #work .work-card-category {
-    font-size: 14px;
     line-height: 1.7;
 }
 
@@ -4336,7 +4101,6 @@ header nav a {
 
 #main .hero-heading-group h1 {
     font-size: clamp(38px, 5.6vw, 82px);
-    font-weight: 750;
     line-height: 1.24;
     letter-spacing: -.055em;
 }
@@ -4348,8 +4112,6 @@ header nav a {
 #process .process-heading h2,
 #work .work-heading h2,
 #about .about-heading h2 {
-    font-size: clamp(40px, 4.8vw, 68px);
-    font-weight: 700;
     letter-spacing: -.055em;
 }
 
@@ -4382,7 +4144,7 @@ header nav a {
 }
 
 :root {
-    --font-ui: 'Inter', 'Noto Sans KR', sans-serif;
+    --font-ui: "Inter", "Noto Sans KR", sans-serif;
 }
 
 body {
@@ -4836,11 +4598,11 @@ main {
 
 @keyframes portfolio-marquee-left {
     from {
-    transform: translateX(0);
+        transform: translateX(0);
     }
-    
+
     to {
-    transform: translateX(-50%);
+        transform: translateX(-50%);
     }
 }
 
@@ -5024,7 +4786,6 @@ main {
     position: sticky;
     top: 0;
     z-index: 5;
-    background: var(--bg);
 }
 
 #project-modal .modal-head h2 {
@@ -5229,7 +4990,8 @@ main {
 }
 
 /* Work: app.js 데이터 순서 유지 / 작업 개수와 무관한 캐러셀 배치 */
-#work .work-grid--carousel .swiper-wrapper > .work-card {
+
+#work .work-grid--carousel .swiper-wrapper>.work-card {
     order: 0;
     grid-column: auto;
     grid-row: auto;
@@ -5240,4 +5002,62 @@ main {
 .work-tabs sup,
 .work-carousel-count {
     font-variant-numeric: tabular-nums;
+}
+
+/* 브랜딩 모달 너비 확대 */
+
+#project-modal.modal--branding .modal-container {
+    max-width: 1440px;
+    padding: clamp(16px, 2vw, 28px);
+}
+
+/* 고정 높이를 해제하고 이미지 길이만큼 표시 */
+
+#project-modal.modal--branding .project-detail-swiper {
+    height: auto;
+}
+
+/* 이미지 주변 여백 축소 */
+
+#project-modal.modal--branding .project-detail-swiper .swiper-slide {
+    height: auto;
+    padding: 0;
+    align-items: flex-start;
+}
+
+/* PNG를 모달 내부 너비에 맞춰 크게 표시 */
+
+#project-modal.modal--branding .project-detail-swiper .swiper-slide img {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: none !important;
+}
+
+/* Visual: 이미지 영역의 고정 높이 해제 */
+
+#project-modal:not(.modal--branding):not(.modal--motion)
+.project-detail-swiper {
+    height: auto;
+}
+
+/* 이미지 주변 여백 제거 */
+
+#project-modal:not(.modal--branding):not(.modal--motion)
+.project-detail-swiper .swiper-slide {
+    height: auto;
+    padding: 0;
+    align-items: flex-start;
+}
+
+/* 원본 비율을 유지하면서 가로 폭 채우기 */
+
+#project-modal:not(.modal--branding):not(.modal--motion)
+.project-detail-swiper .swiper-slide img {
+    display: block;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: none !important;
 }
