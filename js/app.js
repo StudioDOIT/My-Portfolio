@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function () {
             {
                 title: '가상브랜드 CHERIE 웹 메인배너 디자인',
                 category: 'Banner',
-                description: '이제는 취업하세요!',
+                description: '당신의 무드를 말하는 단 하나의 컬러.',
                 // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
                 detailDescription: ``,
                 // 이 작업의 모달에 표시할 내용을 입력하세요.
