@@ -135,6 +135,40 @@ document.addEventListener('DOMContentLoaded', function () {
                 ]
             },
             {
+                title: '민생회복소비쿠폰 카드뉴스',
+                category: 'Card news',
+                description: '일상에 닿는 정책의 언어.',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 작업의 모달에 표시할 내용을 입력하세요.
+                format: '1080 * 1080 px',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
+                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Illustrator',           // 사용 프로그램
+                designIntent: `복잡한 정책 정보를 한눈에 파악할 수 있도록
+                페이지의 내용마다 컬러를 다르게 사용하였습니다.
+                중요한 내용은 레드 컬러와 크기 대비를 통해
+                자연스럽게 강조했습니다.
+`,    // 작업의 목적 · 대상 · 전달할 메시지
+                designApproach: `첫 페이지에서 시선을 유도하기 위해
+                큰 사이즈의 타이포그래피를 적용하였습니다.
+                신청을 유도하고, 정보를 직관적으로 인지할 수 있도록
+                일러스트 요소를 활용했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
+                layout: 'portrait',
+                image: 'images/민생회복1.jpg',
+                detailImages: [
+                    'images/민생회복7.png',
+                    'images/민생회복8.png',
+                    'images/민생회복1.jpg',
+                    'images/민생회복2.jpg',
+                    'images/민생회복3.jpg',
+                    'images/민생회복4.jpg',
+                    'images/민생회복5.jpg',
+                    'images/민생회복6.jpg'
+
+                ]
+            },
+
+            {
                 title: '연세대 2단 리플렛',
                 category: 'leaflet',
                 description: '힘내라 우리 후배들!',
@@ -189,37 +223,31 @@ document.addEventListener('DOMContentLoaded', function () {
                     'images/스타벅스3단리플렛4.jpg',
                 ]
             },
+
             {
-                title: '민생회복소비쿠폰 카드뉴스',
-                category: 'Card news',
-                description: '일상에 닿는 정책의 언어.',
+                title: '가상브랜드 CHERIE 웹 메인배너 디자인',
+                category: 'Banner',
+                description: '이제는 취업하세요!',
                 // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
                 detailDescription: ``,
                 // 이 작업의 모달에 표시할 내용을 입력하세요.
-                format: '1080 * 1080 px',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
+                format: '1280 * 720px',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
                 role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
-                tools: 'Illustrator',           // 사용 프로그램
-                designIntent: `복잡한 정책 정보를 한눈에 파악할 수 있도록
-                페이지의 내용마다 컬러를 다르게 사용하였습니다.
-                중요한 내용은 레드 컬러와 크기 대비를 통해
-                자연스럽게 강조했습니다.
-`,    // 작업의 목적 · 대상 · 전달할 메시지
-                designApproach: `첫 페이지에서 시선을 유도하기 위해
-                큰 사이즈의 타이포그래피를 적용하였습니다.
-                신청을 유도하고, 정보를 직관적으로 인지할 수 있도록
-                일러스트 요소를 활용했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
-                layout: 'portrait',
-                image: 'images/민생회복1.jpg',
-                detailImages: [
-                    'images/민생회복7.png',
-                    'images/민생회복8.png',
-                    'images/민생회복1.jpg',
-                    'images/민생회복2.jpg',
-                    'images/민생회복3.jpg',
-                    'images/민생회복4.jpg',
-                    'images/민생회복5.jpg',
-                    'images/민생회복6.jpg'
+                tools: 'Illustrator, Photoshop',           // 사용 프로그램
+                designIntent: `색조 제품을 선택할 때 확인하는 발색과 광택을 
+                첫 화면에서 함께 보여주고자 했습니다.
+                입술을 크게 드러낸 모델 이미지에 틴트 용기와 제형을 연결하여 
+                제품의 사용 모습과 실제 형태를 한 화면에서 확인하도록 구성했습니다.
 
+`,    // 작업의 목적 · 대상 · 전달할 메시지
+                designApproach: `립 컬러에서 가져온 버건디와 브라운을 화면 전반에 적용하고, 
+                왼쪽 배경의 명도를 낮춰 카피 영역을 확보했습니다. 
+                굵은 산세리프 제목에 가는 필기체를 겹쳐 형태의 대비를 주었으며 
+                제목 아래에 설명과 컬렉션 이동 버튼을 배치해 읽는 순서를 정리했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
+                layout: 'portrait',
+                image: 'images/CHERIE 가상브랜드히어로배너1.jpg',
+                detailImages: [
+                    'images/가상브랜드히어로배너1.jpg'
                 ]
             },
             {
@@ -409,6 +437,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         ]
 
+
     };
 
     // 상세 페이지도 같은 데이터를 사용합니다. 설명과 이미지는 workData에서 수정하세요.
@@ -452,7 +481,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentSwiper = null;
 
     /* =========================================================
-       05. Work 카드 생성 / 형태별 정렬
+       05. Work 카드 생성 / 데이터 순서 유지
        ========================================================= */
 
     const workSwipers = {};
@@ -508,16 +537,7 @@ document.addEventListener('DOMContentLoaded', function () {
             };
         });
 
-        if (category === 'visual') {
-            entries.sort(function (a, b) {
-                function rank(entry) {
-                    if (entry.project.layout === 'portrait') return 0;
-                    return entry.index === 0 ? 1 : 2;
-                }
-
-                return rank(a) - rank(b) || a.index - b.index;
-            });
-        }
+        // workData에 작성한 순서를 그대로 유지합니다.
 
         entries.forEach(function (entry) {
             const project = entry.project;
@@ -1238,6 +1258,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function initWork() {
         if (!workTabs.length) return;
+
+        const totalProjects = Object.values(workData).reduce(function (total, projects) {
+            return total + projects.length;
+        }, 0);
+        document.querySelectorAll('[data-work-total]').forEach(function (count) {
+            count.textContent = String(totalProjects).padStart(2, '0');
+        });
 
         Object.keys(workPanels).forEach(function (category) {
             renderProjects(category);
