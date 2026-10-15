@@ -291,13 +291,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 // 이 브랜드의 모달에 표시할 내용을 입력하세요.
                 scope: '네이밍 · 로고 · 패키지 · 응용 디자인',           // 예: 네이밍 · 로고 · 패키지 · 응용 디자인
                 role: '기획 · 디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
-                tools: 'Illustrator · ChatGPT',           // 사용 프로그램
+                tools: 'Illustrator · Photoshop · ChatGPT',           // 사용 프로그램
                 brandConcept: ``,    // 브랜드가 지향하는 가치 · 타깃 · 핵심 콘셉트
                 identityNotes: ``,   // 로고 · 컬러 · 서체 · 응용 디자인의 전개
                 layout: 'wide',
                 image: 'images/fold-thumb.png',
                 detailImages: [
-                    'images/fold-thumb.png'
+                    'images/fold.png'
                 ]
             },
             {
@@ -310,29 +310,68 @@ document.addEventListener('DOMContentLoaded', function () {
                 // 이 브랜드의 모달에 표시할 내용을 입력하세요.
                 scope: '네이밍 · 로고 · 패키지 · 응용 디자인',           // 예: 네이밍 · 로고 · 패키지 · 응용 디자인
                 role: '기획 · 디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
-                tools: 'Illustrator · ChatGPT',           // 사용 프로그램
+                tools: 'Illustrator · Photoshop · ChatGPT',           // 사용 프로그램
                 brandConcept: ``,    // 브랜드가 지향하는 가치 · 타깃 · 핵심 콘셉트
                 identityNotes: ``,   // 로고 · 컬러 · 서체 · 응용 디자인의 전개
                 layout: 'wide',
-                image: 'images/버거클럽썸네일.png',
+                image: 'images/burgerclub-thumb.png',
                 detailImages: [
-                    'images/버거클럽썸네일.png'
+                    'images/burgerclub.png'
                 ]
             },
         ],
 
-        motion: [
-            {
-                title: 'G-MARKET 2D 30s 모션그래픽',
-                category: 'Motion',
-                description: '검색부터 선택까지, 쇼핑의 흐름을 담은 2D 모션그래픽',
-                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-                detailDescription: ``,
-                // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
-                duration: '00:30',                  // 예: '00:30'
-                role: '기획 · 디자인 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
-                tools: 'After Effects · Illustrator · ChatGPT',                     // 예: 'After Effects · Premiere Pro'
-                productionNotes: `온라인 쇼핑 플랫폼 G마켓을 주제로, 검색부터 상품을 발견하고 선택해 장바구니에 담는 과정을
+        motion: [{
+            title: '한국수목원정원관리원 공모전 생성형 AI 활용 (숏폼 부문)',
+            category: 'Video',
+            description: '한국수목원정원관리원의 역할을 캐릭터로 풀어낸 생성형 AI 숏폼',
+            // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+            detailDescription: ``,
+            // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+            duration: '00:15',                  // 예: '00:30'
+            role: '기획 · 디자인 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+            tools: 'ChatGPT · Google Flow',                     // 예: 'After Effects · Premiere Pro'
+            productionNotes: `한국수목원정원관리원의 핵심 업무를 친근하게 전달하기 위해
+                산림생태계 관리, 식물 증식 및 복원, 곤충 관리, 희귀·자생식물 보전, 시설물 관리를
+                각각 하나의 캐릭터로 의인화하여 세계관을 구성했습니다.
+
+                자연을 소재로 한 캐릭터의 형태와 색감, 의상, 표정 등을 통일해
+                각기 다른 역할을 지니면서도 하나의 시리즈처럼 보이도록 디자인했습니다.
+
+                AI 이미지 생성 과정에서는 캐릭터의 외형과 배경 스타일이 장면마다 달라지지 않도록
+                프롬프트를 반복적으로 수정하며 일관성을 높였습니다.
+
+                또한 영상으로 확장했을 때 장면이 자연스럽게 연결될 수 있도록
+                카메라 구도와 빛의 방향, 시간대와 장면 전환까지 함께 고려해
+                수목원의 다양한 역할과 자연 보전의 이야기가 하나의 흐름으로 이어지도록 구성했습니다.`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
+            projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+
+            layout: 'wide',
+            image: 'images/한수정썸네일1.png',
+
+            // ★ 여기 수정: 실제 영상 파일 경로로 변경
+            videoSrc: 'videos/생명을 이어가는 하루.mp4',
+
+            detailImages: [
+                'images/한수정썸네일1.png',
+                'images/한수정썸네일2.png',
+                'images/한수정썸네일3.png',
+                'images/한수정썸네일4.png',
+                'images/한수정썸네일5.png',
+                'images/한수정썸네일6.png'
+            ]
+        },
+        {
+            title: 'G-MARKET 2D 30s 모션그래픽',
+            category: 'Motion',
+            description: '검색부터 선택까지, 쇼핑의 흐름을 담은 2D 모션그래픽',
+            // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+            detailDescription: ``,
+            // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+            duration: '00:30',                  // 예: '00:30'
+            role: '기획 · 디자인 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+            tools: 'After Effects · Illustrator · ChatGPT',                     // 예: 'After Effects · Premiere Pro'
+            productionNotes: `온라인 쇼핑 플랫폼 G마켓을 주제로, 검색부터 상품을 발견하고 선택해 장바구니에 담는 과정을
                 하나의 흐름으로 구성한 30초 모션그래픽 광고 영상을 제작했습니다.
 
                 전체 영상은 SEARCH → FIND → CHOOSE → ADD의 쇼핑 경험을 중심으로 전개했으며,
@@ -349,69 +388,30 @@ document.addEventListener('DOMContentLoaded', function () {
                 재구성했습니다.
 
                 빠르고 경쾌한 온라인 쇼핑 경험을 표현하는 데 중점을 두었습니다.`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
-                projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+            projectUrl: '',                // 상세 페이지가 있으면 주소 입력
 
-                layout: 'wide',
-                image: 'images/지마켓썸네일.png',
+            layout: 'wide',
+            image: 'images/지마켓썸네일.png',
 
-                // YouTube 공유 주소의 영상 ID
-                youtubeId: 'F6jmoRrXnYE',
+            // YouTube 공유 주소의 영상 ID
+            youtubeId: 'F6jmoRrXnYE',
 
-                detailImages: [
-                    'images/지마켓썸네일.png'
-                ]
-            },
-            {
-                title: '한국수목원정원관리원 공모전 생성형 AI 활용 (숏폼 부문)',
-                category: 'Video',
-                description: '한국수목원정원관리원의 역할을 캐릭터로 풀어낸 생성형 AI 숏폼',
-                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-                detailDescription: ``,
-                // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
-                duration: '00:15',                  // 예: '00:30'
-                role: '기획 · 디자인 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
-                tools: 'ChatGPT · Google Flow',                     // 예: 'After Effects · Premiere Pro'
-                productionNotes: `한국수목원정원관리원의 핵심 업무를 친근하게 전달하기 위해
-                산림생태계 관리, 식물 증식 및 복원, 곤충 관리, 희귀·자생식물 보전, 시설물 관리를
-                각각 하나의 캐릭터로 의인화하여 세계관을 구성했습니다.
+            detailImages: [
+                'images/지마켓썸네일.png'
+            ]
+        },
 
-                자연을 소재로 한 캐릭터의 형태와 색감, 의상, 표정 등을 통일해
-                각기 다른 역할을 지니면서도 하나의 시리즈처럼 보이도록 디자인했습니다.
-
-                AI 이미지 생성 과정에서는 캐릭터의 외형과 배경 스타일이 장면마다 달라지지 않도록
-                프롬프트를 반복적으로 수정하며 일관성을 높였습니다.
-
-                또한 영상으로 확장했을 때 장면이 자연스럽게 연결될 수 있도록
-                카메라 구도와 빛의 방향, 시간대와 장면 전환까지 함께 고려해
-                수목원의 다양한 역할과 자연 보전의 이야기가 하나의 흐름으로 이어지도록 구성했습니다.`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
-                projectUrl: '',                // 상세 페이지가 있으면 주소 입력
-
-                layout: 'wide',
-                image: 'images/한수정썸네일1.png',
-
-                // ★ 여기 수정: 실제 영상 파일 경로로 변경
-                videoSrc: 'videos/생명을 이어가는 하루.mp4',
-
-                detailImages: [
-                    'images/한수정썸네일1.png',
-                    'images/한수정썸네일2.png',
-                    'images/한수정썸네일3.png',
-                    'images/한수정썸네일4.png',
-                    'images/한수정썸네일5.png',
-                    'images/한수정썸네일6.png'
-                ]
-            },
-            {
-                title: 'CORTIS (코르티스) - REDRED 교차편집 (STAGE MIX)',
-                category: 'Video',
-                description: '서로 다른 무대를 안무와 리듬에 맞춰 연결한 ‘REDRED’ 교차편집 영상',
-                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-                detailDescription: ``,
-                // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
-                duration: '02:41',                  // 예: '00:30'
-                role: '기획 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
-                tools: 'Premiere Pro',                     // 예: 'After Effects · Premiere Pro'
-                productionNotes: `서로 다른 무대가 하나의 퍼포먼스처럼 이어지도록 구성한 교차편집 작업입니다.
+        {
+            title: 'CORTIS (코르티스) - REDRED 교차편집 (STAGE MIX)',
+            category: 'Video',
+            description: '서로 다른 무대를 안무와 리듬에 맞춰 연결한 ‘REDRED’ 교차편집 영상',
+            // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+            detailDescription: ``,
+            // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+            duration: '02:41',                  // 예: '00:30'
+            role: '기획 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+            tools: 'Premiere Pro',                     // 예: 'After Effects · Premiere Pro'
+            productionNotes: `서로 다른 무대가 하나의 퍼포먼스처럼 이어지도록 구성한 교차편집 작업입니다.
                 무대마다 달라지는 의상과 조명, 배경을 활용하면서도 안무와 곡의 흐름이 자연스럽게 이어지는 데 중점을 두었습니다.
 
                 장면을 연결할 때는 인물의 위치와 움직임, 카메라 구도를 기준으로 전환 지점을 잡았습니다.
@@ -423,18 +423,53 @@ document.addEventListener('DOMContentLoaded', function () {
                 원본 영상 및 음원의 저작권은 각 방송사와 소속사에 있습니다.
                 요청 시 삭제될 수 있습니다.
                 (For portfolio purposes only. All rights belong to the original owners.)`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
-                projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+            projectUrl: '',                // 상세 페이지가 있으면 주소 입력
 
-                layout: 'wide',
-                image: 'images/코르티스레드레드썸네일.jpg',
+            layout: 'wide',
+            image: 'images/코르티스레드레드썸네일.jpg',
 
-                // YouTube 공유 주소의 영상 ID
-                youtubeId: 'xcibSXSd048',
+            // YouTube 공유 주소의 영상 ID
+            youtubeId: 'xcibSXSd048',
 
-                detailImages: [
-                    'images/코르티스레드레드썸네일.jpg'
-                ]
-            }
+            detailImages: [
+                'images/코르티스레드레드썸네일.jpg'
+            ]
+        },
+        {
+            title: '넷플릭스 인트로 활용 식전영상',
+            category: 'Video',
+            description: '두 사람의 이야기가 한 편의 시리즈가 되다.',
+            // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+            detailDescription: ``,
+            // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+            duration: '00:26',                  // 예: '00:30'
+            role: '기획 · 디자인 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+            tools: 'After Effects · Illustrator',                     // 예: 'After Effects · Premiere Pro'
+            productionNotes: `두 사람의 만남과 결혼을 하나의 시리즈로 소개하는 웨딩 영상입니다.
+                넷플릭스의 프로필 선택, 메인 화면, 콘텐츠 상세 화면을 결혼 소식에 맞게 재구성했습니다.
+
+                프로필에는 두 사람의 이름과 사진을 배치하고, 메인 화면에서는
+                ‘오늘, 결혼합니다’를 콘텐츠 제목으로 사용했습니다.
+                함께한 사진은 순위형 콘텐츠 목록으로 구성해,
+                두 사람의 시간을 한 편의 작품을 탐색하듯 살펴보도록 했습니다.
+
+                상단 메뉴와 콘텐츠 소개 문구에는 하객을 향한 감사와 결혼 소식을 담았습니다.
+                기존 인터페이스의 형식을 유지하면서 각 요소를 두 사람의 이야기로 바꾸는 데 중점을 두었습니다.
+
+                커서의 이동과 버튼 선택에 따라 화면이 전환되도록 구성해,
+                프로필 선택에서 메인 화면을 거쳐 상세 소개로 이어지는 흐름을 만들었습니다.`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
+            projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+
+            layout: 'wide',
+            image: 'images/넷플릭스-thumb.png',
+
+            // YouTube 공유 주소의 영상 ID
+            youtubeId: 'IDifG2mUUxw',
+
+            detailImages: [
+                'images/넷플릭스-thumb.png'
+            ]
+        }
         ]
 
 
@@ -455,15 +490,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ? 'https://www.youtube.com/watch?v=' + id : '';
     }
 
-    function brandingUrl(project) {
-        // fold → 직접 만든 브랜딩 상세 페이지
-        if (project.slug === 'fold') {
-            return './fold-branding.html';
-        }
-
-        // 다른 브랜드 → 기존 상세 페이지
-        return './branding.html?project=' + encodeURIComponent(project.slug);
-    }
 
     /* =========================================================
        04. Work 요소
@@ -552,19 +578,11 @@ document.addEventListener('DOMContentLoaded', function () {
             card.dataset.category = category;
             card.dataset.index = entry.index;
 
-            const videoUrl = '';
-            const isLink = category === 'branding';
-            const cardTag = isLink ? 'a' : 'button';
-            const linkAttributes = videoUrl
-                ? 'href="' + videoUrl + '" target="_blank" rel="noopener noreferrer"'
-                : category === 'branding'
-                    ? 'href="' + brandingUrl(project) + '"' : 'type="button"';
-
             card.innerHTML = `
-                <${cardTag}
-                    ${linkAttributes}
+                <button
+                    type="button"
                     class="work-card-button"
-                    aria-label="${project.title} ${videoUrl ? 'YouTube에서 보기 (새 탭)' : '프로젝트 보기'}"
+                    aria-label="${project.title} 프로젝트 보기"
                 >
                     <div class="work-card-image">
                         <img
@@ -580,7 +598,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <h3>${project.title}</h3>
                         <p>${project.description}</p>
                     </div>
-                </${cardTag}>
+                </button>
             `;
 
             wrapper.appendChild(card);
@@ -677,8 +695,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     event.preventDefault();
                     return;
                 }
-                // 브랜딩과 유튜브 카드는 링크의 기본 동작을 사용합니다.
-                if (button.tagName === 'A') return;
 
                 openProjectModal(
                     card.dataset.category,
@@ -765,11 +781,6 @@ document.addEventListener('DOMContentLoaded', function () {
             workData[category][index];
 
         if (!project) return;
-        // 상단 갤러리에서 브랜딩을 눌러도 같은 상세 페이지로 이동합니다.
-        if (category === 'branding') {
-            window.location.assign(brandingUrl(project));
-            return;
-        }
         if (!modal || modalClosing) return;
 
         const overlay = modal.querySelector('.modal-overlay');
@@ -819,6 +830,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const isMotion = category === 'motion';
         modal.classList.toggle('modal--motion', isMotion);
+        modal.classList.toggle('modal--branding', category === 'branding');
         modal.classList.add('modal--details');
         // 각 작업의 데이터로 정보 영역을 새로 구성합니다.
         const facts = modal.querySelector('.modal-facts');
@@ -925,14 +937,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 playIcon.setAttribute('aria-hidden', 'true');
                 playIcon.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:68px;height:68px;padding-left:4px;box-sizing:border-box;border-radius:50%;background:rgba(0,0,0,.65);color:#fff;font-size:26px;pointer-events:none;';
                 thumbnailLink.append(thumbnail, playIcon);
-                const watchLink = document.createElement('a');
-                watchLink.href = url;
-                watchLink.target = '_blank';
-                watchLink.rel = 'noopener noreferrer';
-                watchLink.textContent = '유튜브에서 영상 보기 ↗';
-                watchLink.setAttribute('aria-label', project.title + ' — 유튜브에서 영상 보기 (새 탭)');
-                watchLink.style.cssText = 'display:inline-flex;align-items:center;justify-content:center;margin-top:16px;padding:12px 20px;border-radius:999px;background:#222;color:#fff;font-size:14px;font-weight:600;line-height:1.5;text-decoration:none;';
-                video.append(thumbnailLink, watchLink);
+                video.append(thumbnailLink);
             } else if (hasVideo) {
                 video.poster = project.image;
                 video.addEventListener('loadedmetadata', function () {
@@ -1091,6 +1096,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         currentSwiper = new Swiper(el, {
             slidesPerView: 1,
+            autoHeight: true, // 현재 이미지 높이에 맞춰 영역 조절
             spaceBetween: 20,
             speed: reducedMotion.matches ? 0 : 450,
             rewind: true,
