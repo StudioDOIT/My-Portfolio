@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css?v=work-sync-20261015">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&amp;display=swap">
     <script defer src="./js/gsap.min.js"></script>
     <script defer src="./js/ScrollTrigger.min.js"></script>
@@ -20,7 +20,7 @@
     <script defer src="./js/micromodal.min.js"></script>
     <!-- app.js보다 먼저 로드해야 Typed 생성자가 준비됩니다. -->
     <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script defer src="./js/app.js?v=branding-detail-1"></script>
+    <script defer src="./js/app.js?v=work-sync-20261015"></script>
 </head>
 
 <body><a class="skip" href="#work">작품 바로가기</a>
@@ -28,7 +28,7 @@
                 alt="gnblogo"><span>®</span></a>
         <nav aria-label="주요 메뉴">
             <a href="#main" class="active">Main</a>
-            <a href="#work">Work <sup>11</sup></a>
+            <a href="#work">Work <sup data-work-total>12</sup></a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav><span class="header-note">DESIGNER PORTFOLIO / 2026</span>
@@ -64,7 +64,7 @@
             </div>
         </section>
         <section id="work" class="work section-pad">
-            <div class="section-kicker"><span> 01 / WORK</span><span>SELECTED PROJECTS — 11</span></div>
+            <div class="section-kicker"><span> 01 / WORK</span><span>SELECTED PROJECTS — <span data-work-total>12</span></span></div>
             <div class="work-heading">
                 <h2>Selected <span class="italic">work.</span></h2>
                 <div class="work-intro">
@@ -73,11 +73,11 @@
             </div>
             <div class="work-tabs" role="tablist" aria-label="작품 분야">
                 <button id="tab-visual" role="tab" aria-selected="true" aria-controls="panel-visual"
-                    data-category="visual">Visual <sup>06</sup></button>
+                    data-category="visual">Visual <sup>07</sup></button>
                 <button id="tab-branding" role="tab" aria-selected="false" aria-controls="panel-branding" tabindex="-1"
-                    data-category="branding">Branding <sup>03</sup></button>
+                    data-category="branding">Branding <sup>02</sup></button>
                 <button id="tab-motion" role="tab" aria-selected="false" aria-controls="panel-motion" tabindex="-1"
-                    data-category="motion">Video <sup>02</sup></button>
+                    data-category="motion">Video <sup>03</sup></button>
             </div>
             <div id="panel-visual" class="work-grid" role="tabpanel" aria-labelledby="tab-visual"></div>
             <div id="panel-branding" class="work-grid" role="tabpanel" aria-labelledby="tab-branding" hidden></div>
@@ -135,7 +135,7 @@
                             <ul class="education-list">
                                 <li>
                                     <div class="education-info">
-                                        <span class="education-name">생성형AI (Stable Diffusion, Chat GPT) 활용 뉴미디어 콘텐츠 개발자
+                                        <span class="education-name">생성형AI (Stable Diffusion, ChatGPT) 활용 뉴미디어 콘텐츠 개발자
                                             양성과정</span>
                                         <span class="education-detail">
                                             이젠컴퓨터아트서비스학원 전주캠퍼스 · 수료
@@ -272,9 +272,9 @@
                         <path d="M10 8.5 16 12l-6 3.5Z" class="youtube-play" />
                     </svg>
                 </a>
-                <!-- blog -->
+                <!-- Blog -->
                 <a class="social-link" href="https://naver.me/GbynP1LP" target="_blank" rel="noopener noreferrer"
-                    title="" aria-label="블로그 열기 (새 탭)">
+                    title="Blog" aria-label="블로그 열기 (새 탭)">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
                         stroke-linejoin="round" aria-hidden="true" focusable="false">
                         <rect x="4" y="3" width="16" height="18" rx="2" />
