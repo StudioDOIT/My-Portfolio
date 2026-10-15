@@ -5227,3 +5227,17 @@ main {
     border: none;
     padding: 0;
 }
+
+/* Work: app.js 데이터 순서 유지 / 작업 개수와 무관한 캐러셀 배치 */
+#work .work-grid--carousel .swiper-wrapper > .work-card {
+    order: 0;
+    grid-column: auto;
+    grid-row: auto;
+    flex-shrink: 0;
+}
+
+[data-work-total],
+.work-tabs sup,
+.work-carousel-count {
+    font-variant-numeric: tabular-nums;
+}
