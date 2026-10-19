@@ -20,7 +20,7 @@
     <script defer src="./js/micromodal.min.js"></script>
     <!-- app.js보다 먼저 로드해야 Typed 생성자가 준비됩니다. -->
     <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script defer src="./js/app.js?v=work-sync-20261015"></script>
+    <script defer src="./js/app.js?v=web-category-20261019"></script>
 </head>
 
 <body><a class="skip" href="#work">작품 바로가기</a>
@@ -28,7 +28,7 @@
                 alt="gnblogo"><span>®</span></a>
         <nav aria-label="주요 메뉴">
             <a href="#main" class="active">Main</a>
-            <a href="#work">Work <sup data-work-total>12</sup></a>
+            <a href="#work">Work <sup data-work-total>13</sup></a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav><span class="header-note">DESIGNER PORTFOLIO / 2026</span>
@@ -66,7 +66,7 @@
         </section>
         <section id="work" class="work section-pad">
             <div class="section-kicker"><span> 01 / WORK</span><span>SELECTED PROJECTS — <span
-                        data-work-total>12</span></span></div>
+                        data-work-total>13</span></span></div>
             <div class="work-heading">
                 <h2>Selected <span class="italic">work.</span></h2>
                 <div class="work-intro">
@@ -78,11 +78,14 @@
                     data-category="visual">Visual <sup>07</sup></button>
                 <button id="tab-branding" role="tab" aria-selected="false" aria-controls="panel-branding" tabindex="-1"
                     data-category="branding">Branding <sup>02</sup></button>
+                <button id="tab-web" role="tab" aria-selected="false" aria-controls="panel-web" tabindex="-1"
+                    data-category="web">Web <sup>00</sup></button>
                 <button id="tab-motion" role="tab" aria-selected="false" aria-controls="panel-motion" tabindex="-1"
-                    data-category="motion">Video <sup>03</sup></button>
+                    data-category="motion">Video <sup>04</sup></button>
             </div>
             <div id="panel-visual" class="work-grid" role="tabpanel" aria-labelledby="tab-visual"></div>
             <div id="panel-branding" class="work-grid" role="tabpanel" aria-labelledby="tab-branding" hidden></div>
+            <div id="panel-web" class="work-grid" role="tabpanel" aria-labelledby="tab-web" hidden></div>
             <div id="panel-motion" class="work-grid" role="tabpanel" aria-labelledby="tab-motion" hidden></div>
 
         </section>
