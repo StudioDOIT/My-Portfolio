@@ -223,33 +223,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     'images/스타벅스3단리플렛4.jpg',
                 ]
             },
-
-            {
-                title: '가상브랜드 CHERIE 웹 메인배너 디자인',
-                category: 'Banner',
-                description: '당신의 무드를 말하는 단 하나의 컬러.',
-                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-                detailDescription: ``,
-                // 이 작업의 모달에 표시할 내용을 입력하세요.
-                format: '1280 * 720px',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
-                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
-                tools: 'Illustrator, Photoshop',           // 사용 프로그램
-                designIntent: `색조 제품을 선택할 때 확인하는 발색과 광택을 
-                첫 화면에서 함께 보여주고자 했습니다.
-                입술을 크게 드러낸 모델 이미지에 틴트 용기와 제형을 연결하여 
-                제품의 사용 모습과 실제 형태를 한 화면에서 확인하도록 구성했습니다.
-
-`,    // 작업의 목적 · 대상 · 전달할 메시지
-                designApproach: `립 컬러에서 가져온 버건디와 브라운을 화면 전반에 적용하고, 
-                왼쪽 배경의 명도를 낮춰 카피 영역을 확보했습니다. 
-                굵은 산세리프 제목에 가는 필기체를 겹쳐 형태의 대비를 주었으며 
-                제목 아래에 설명과 컬렉션 이동 버튼을 배치해 읽는 순서를 정리했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
-                layout: 'portrait',
-                image: 'images/CHERIE 가상브랜드히어로배너1.jpg',
-                detailImages: [
-                    'images/가상브랜드히어로배너1.jpg'
-                ]
-            },
             {
                 title: '기업 명함 디자인',
                 category: 'Business card',
@@ -319,6 +292,50 @@ document.addEventListener('DOMContentLoaded', function () {
                     'images/burgerclub.png'
                 ]
             },
+        ],
+
+        web: [
+            {
+                title: '가상브랜드 CHERIE 웹 메인배너 디자인',
+                category: 'Banner',
+                description: '당신의 무드를 말하는 단 하나의 컬러.',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 작업의 모달에 표시할 내용을 입력하세요.
+                format: '1280 * 720px',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
+                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Illustrator, Photoshop',           // 사용 프로그램
+                designIntent: `색조 제품을 선택할 때 확인하는 발색과 광택을 
+                첫 화면에서 함께 보여주고자 했습니다.
+                입술을 크게 드러낸 모델 이미지에 틴트 용기와 제형을 연결하여 
+                제품의 사용 모습과 실제 형태를 한 화면에서 확인하도록 구성했습니다.
+
+`,    // 작업의 목적 · 대상 · 전달할 메시지
+                designApproach: `립 컬러에서 가져온 버건디와 브라운을 화면 전반에 적용하고, 
+                왼쪽 배경의 명도를 낮춰 카피 영역을 확보했습니다. 
+                굵은 산세리프 제목에 가는 필기체를 겹쳐 형태의 대비를 주었으며 
+                제목 아래에 설명과 컬렉션 이동 버튼을 배치해 읽는 순서를 정리했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
+                layout: 'portrait',
+                image: 'images/CHERIE 가상브랜드히어로배너1.jpg',
+                detailImages: [
+                    'images/가상브랜드히어로배너1.jpg'
+                ]
+            },
+            {
+                title: '웹 메인 페이지 디자인',
+                category: 'Web Design',
+                description: '작업을 소개하는 한 줄 설명',
+                detailDescription: ``,
+                format: 'Desktop 메인 페이지',
+                role: '',
+                tools: '',
+                designIntent: ``,
+                designApproach: ``,
+                layout: 'wide',
+                image: 'images/web-thumbnail.jpg',
+                detailImages: ['images/web-main.png'],
+                projectUrl: ''
+            }
         ],
 
         motion: [{
@@ -500,6 +517,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const workPanels = {
         visual: document.getElementById('panel-visual'),
         branding: document.getElementById('panel-branding'),
+        web: document.getElementById('panel-web'),
         motion: document.getElementById('panel-motion')
     };
 
@@ -525,6 +543,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
         panel.classList.remove('work-grid--mixed');
         panel.classList.add('work-grid--carousel');
+
+        if (!projects.length) {
+            panel.replaceChildren();
+            const empty = document.createElement('p');
+            empty.className = 'work-empty';
+            empty.textContent = '등록된 작업이 없습니다.';
+            panel.appendChild(empty);
+            return;
+        }
 
         panel.innerHTML = `
             <div class="swiper work-swiper" aria-label="${category} 작업물 갤러리">
@@ -625,6 +652,9 @@ document.addEventListener('DOMContentLoaded', function () {
         Object.values(workSwipers).forEach(function (swiper) {
             if (swiper.keyboard) swiper.keyboard.disable();
         });
+
+        // 빈 카테고리는 Swiper를 만들지 않습니다.
+        if (!(workData[category] || []).length) return;
 
         if (!workSwipers[category]) {
             workSwipers[category] = new Swiper(
@@ -1276,8 +1306,9 @@ document.addEventListener('DOMContentLoaded', function () {
             renderProjects(category);
         });
 
-        switchCategory(new URLSearchParams(window.location.search).get('category') === 'branding'
-            ? 'branding' : 'visual');
+        const requestedCategory = new URLSearchParams(window.location.search).get('category');
+        switchCategory(Object.prototype.hasOwnProperty.call(workPanels, requestedCategory)
+            ? requestedCategory : 'visual');
 
         workTabs.forEach(function (button) {
             const category = button.dataset.category;
