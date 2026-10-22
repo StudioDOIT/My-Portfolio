@@ -3858,7 +3858,7 @@ header nav a {
 }
 
 #main .conversation.conversation--expanded {
-    margin-top: 42px;
+    margin-top: 34px;
     transform: none;
     border: 0;
     background: transparent;
@@ -3866,8 +3866,8 @@ header nav a {
 }
 
 #main .prompt-display {
-    min-height: 78px;
-    padding: 22px 28px;
+    min-height: 68px;
+    padding: 18px 24px;
     border: 1px solid var(--line);
     border-radius: 16px;
     background: #fff;
@@ -3876,7 +3876,7 @@ header nav a {
 }
 
 #main .prompt-display #prompt-text {
-    font-size: clamp(20px, 2.2vw, 26px);
+    font-size: clamp(18px, 2vw, 23px);
     letter-spacing: -.035em;
 }
 
@@ -3890,7 +3890,7 @@ header nav a {
 #main .prompt-hint {
     font-size: 14px;
     color: var(--muted);
-    margin: 24px 0 20px;
+    margin: 20px 0 16px;
 }
 
 #main .question-options button {
@@ -3900,13 +3900,13 @@ header nav a {
 #main .hero-bottom {
     position: static;
     width: 100%;
-    margin: 46px auto 0;
+    margin: 36px auto 0;
     text-align: center;
     justify-content: center;
 }
 
 #main .hero-bottom p {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--muted);
     line-height: 1.9;
 }
@@ -4054,8 +4054,8 @@ header nav a {
     }
 
     #main .prompt-display {
-        min-height: 70px;
-        padding: 18px;
+        min-height: 62px;
+        padding: 16px;
         gap: 10px;
     }
 
@@ -4100,7 +4100,7 @@ header nav a {
 }
 
 #main .hero-heading-group h1 {
-    font-size: clamp(38px, 5.6vw, 82px);
+    font-size: clamp(34px, 4.9vw, 72px);
     line-height: 1.24;
     letter-spacing: -.055em;
 }
@@ -4133,7 +4133,7 @@ header nav a {
 
 @media (max-width: 520px) {
     #main .hero-heading-group h1 {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     #process .process-heading h2,
@@ -4641,21 +4641,22 @@ main {
 }
 
 #main .conversation.conversation--expanded {
-    width: min(100%, 1040px);
+    width: min(100%, 1160px);
 }
 
 #main .prompt-display {
-    max-width: 780px;
+    max-width: 680px;
     margin-inline: auto;
 }
 
 #main .question-options {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 10px;
     width: 100%;
+    max-width: 680px;
+    margin-inline: auto;
 }
 
 #main .question-options button {
@@ -4665,19 +4666,22 @@ main {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    width: auto;
+    width: 100%;
     max-width: 100%;
     min-width: 0;
-    min-height: 44px;
-    padding: 10px 18px;
+    min-height: 42px;
+    padding: 10px 12px;
     border: 1px solid transparent;
     border-radius: 999px;
     background: #e5daf2;
     color: #483758;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
     line-height: 1.5;
     white-space: nowrap;
+    word-break: keep-all;
+    overflow-wrap: normal;
+    text-align: center;
     box-shadow: none;
     transform: none;
     transition: background-color .2s ease, color .2s ease;
@@ -4711,14 +4715,14 @@ main {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     #main .question-options {
-        gap: 10px;
+        grid-template-columns: minmax(0, 1fr);
+        max-width: 380px;
     }
 
     #main .question-options button {
         padding: 10px 16px;
-        font-size: 13px;
     }
 }
 
@@ -5061,7 +5065,6 @@ main {
     max-width: 100% !important;
     max-height: none !important;
 }
-
 #about .portrait-frame {
     aspect-ratio: 2 / 3;
     height: auto;
