@@ -83,6 +83,33 @@ document.addEventListener('DOMContentLoaded', function () {
     const workData = {
         visual: [
             {
+                title: '공기업 취업특강 안내포스터 리디자인',
+                category: 'Poster',
+                description: '이제는 취업하세요!',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 작업의 모달에 표시할 내용을 입력하세요.
+                format: 'A3',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
+                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Illustrator',           // 사용 프로그램
+                designIntent: `리디자인에서는 제목의 '업'을 'UP'으로 
+                치환한 타이틀을 가장 먼저 보이도록 배치하여 
+                특강 참여가 참여자를 긍정적인 방향으로 
+                이끌어줄 수 있다는 느낌을 주도록 하였습니다.
+
+`,    // 작업의 목적 · 대상 · 전달할 메시지
+                designApproach: `레드 계열의 컬러를 사용하여
+                가독성에 부담을 준다고 판단하여
+                블루 계열의 컬러를 사용함으로써
+                이를 개선하였습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
+                layout: 'portrait',
+                image: 'images/공기업취업특강포스터3.png',
+                detailImages: [
+                    'images/공기업취업특강포스터2.png',
+                    'images/공기업취업특강포스터1.png'
+                ]
+            },
+            {
                 title: '청년창업지원사업 안내포스터',
                 category: 'Poster',
                 description: '청년의 시작을 그리다.',
@@ -101,37 +128,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 유지하면서도 활기찬 청년을 보여주는 일러스트 요소를
                 활용하여 친근하고 적극적인 분위기를 표현했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'portrait',
-                image: 'images/청년창업지원포스터1.png',
+                image: 'images/청년창업지원포스터3.png',
                 detailImages: [
                     'images/청년창업지원포스터2.png',
                     'images/청년창업지원포스터1.png'
-                ]
-            },
-            {
-                title: '공기업 취업특강 안내포스터',
-                category: 'Poster',
-                description: '이제는 취업하세요!',
-                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-                detailDescription: ``,
-                // 이 작업의 모달에 표시할 내용을 입력하세요.
-                format: 'A3',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
-                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
-                tools: 'Illustrator',           // 사용 프로그램
-                designIntent: `리디자인에서는 제목의 '업'을 'UP'으로 
-                치환한 타이틀을 가장 먼저 보이도록 배치하여 
-                특강 참여가 참여자를 긍정적인 방향으로 
-                이끌어줄 수 있다는 느낌을 주도록 하였습니다.
-
-`,    // 작업의 목적 · 대상 · 전달할 메시지
-                designApproach: `또한, 레드 계열의 컬러를 사용하여
-                가독성에 부담을 준다고 판단하여
-                블루 계열의 컬러를 사용함으로써
-                이를 개선하였습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
-                layout: 'portrait',
-                image: 'images/공기업취업특강포스터1.png',
-                detailImages: [
-                    'images/공기업취업특강포스터2.png',
-                    'images/공기업취업특강포스터1.png'
                 ]
             },
             {
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 신청을 유도하고, 정보를 직관적으로 인지할 수 있도록
                 일러스트 요소를 활용했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'portrait',
-                image: 'images/민생회복1.jpg',
+                image: 'images/민생회복7.png',
                 detailImages: [
                     'images/민생회복7.png',
                     'images/민생회복8.png',
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 원하는 장학금 유형을 선택하여 약정서 작성까지 빠르게
                 이어갈 수 있도록 설계했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'wide',
-                image: 'images/연세대2단리플렛5.png',
+                image: 'images/연세대2단리플렛1.png',
                 detailImages: [
                     'images/연세대2단리플렛5.png',
                     'images/연세대2단리플렛1.png',
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function () {
 `,    // 작업의 목적 · 대상 · 전달할 메시지
                 designApproach: `내지에서는 많은 정보량을 압축하여 한눈에 이해할 수 있도록 메뉴를 아이콘으로 만들어 디자인했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'wide',
-                image: 'images/스타벅스3단리플렛5.png',
+                image: 'images/스타벅스3단리플렛1.png',
                 detailImages: [
                     'images/스타벅스3단리플렛5.png',
                     'images/스타벅스3단리플렛1.png',
@@ -253,6 +253,73 @@ document.addEventListener('DOMContentLoaded', function () {
 
         ],
 
+        web: [
+            {
+                title: '가상브랜드 CHERIE 웹사이트 메인배너 디자인 프로젝트',
+                category: 'Banner',
+                description: '당신의 무드를 말하는 단 하나의 컬러.',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 작업의 모달에 표시할 내용을 입력하세요.
+                format: '1280 * 720px',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
+                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Illustrator · Photoshop',           // 사용 프로그램
+                designIntent: `색조 제품을 선택할 때 확인하는 발색과 광택을 
+                첫 화면에서 함께 보여주고자 했습니다.
+                입술을 크게 드러낸 모델 이미지에 틴트 용기와 제형을 연결하여 
+                제품의 사용 모습과 실제 형태를 한 화면에서 확인하도록 구성했습니다.
+
+`,    // 작업의 목적 · 대상 · 전달할 메시지
+                designApproach: `립 컬러에서 가져온 버건디와 브라운을 화면 전반에 적용하고, 
+                왼쪽 배경의 명도를 낮춰 카피 영역을 확보했습니다. 
+                굵은 산세리프 제목에 가는 필기체를 겹쳐 형태의 대비를 주었으며 
+                제목 아래에 설명과 컬렉션 이동 버튼을 배치해 읽는 순서를 정리했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
+                layout: 'portrait',
+                image: 'images/CHERIE 가상브랜드히어로배너1.png',
+                detailImages: [
+                    'images/CHERIE 가상브랜드히어로배너2.jpg'
+                ]
+            },
+            {
+                title: '아이오페 맨즈 웹사이트 디자인 프로젝트',
+                category: 'Web Design',
+                description: '남자의 스킨케어, 하나로 완성되는 자신감.',
+                detailDescription: ``,
+                format: 'Desktop 메인 페이지',
+                role: '디자인 / 개인 작업 100%',
+                tools: 'Figma · ChatGPT',
+                designIntent: `간편하면서도 효과적인 피부 관리를 원하는 사용자를 위해 ‘하나로 충분한 스킨케어’라는 메시지를 시각적으로 전달하고자 했습니다.
+                딥 네이비와 화이트를 중심으로 정제된 브랜드 이미지를 표현하고, 제품 이미지와 핵심 정보를 명확하게 제시해 제품에 대한 관심이 구매 및 탐색으로 이어지도록 설계했습니다.`,
+                designApproach: `메인 배너는 딥 네이비 배경과 스톤 질감의 받침으로 제품의 존재감을 강조하고, 좌측 카피와 우측 제품 이미지로 시선을 분리했습니다.
+                제품 라인업은 일정한 그리드로 정렬해 비교가 쉽도록 구성했으며, 주력 제품 영역은 연출 이미지와 효능 수치를 함께 배치해 정보의 주목도를 높였습니다.
+                넓은 여백과 블루 포인트 컬러로 시각적 일관성을 유지하고, 브랜드 배너와 높낮이를 달리한 리뷰 카드로 화면에 리듬을 더했습니다.
+                하단에는 기프트 이미지를 활용한 이벤트 영역을 배치해 구매 혜택을 안내했습니다.`,
+                layout: 'wide',
+                image: 'images/아이오페맨즈웹사이트1.png',
+                detailImages: ['images/아이오페맨즈웹사이트2.png'],
+                projectUrl: ''
+            },
+             {
+                title: '올리브베러 웹사이트 리디자인 프로젝트',
+                category: 'Web Design',
+                description: '남자의 스킨케어, 하나로 완성되는 자신감.',
+                detailDescription: ``,
+                format: 'Desktop 메인 페이지',
+                role: '디자인 / 개인 작업 100%',
+                tools: 'Figma · ChatGPT',
+                designIntent: `간편하면서도 효과적인 피부 관리를 원하는 사용자를 위해 ‘하나로 충분한 스킨케어’라는 메시지를 시각적으로 전달하고자 했습니다.
+                딥 네이비와 화이트를 중심으로 정제된 브랜드 이미지를 표현하고, 제품 이미지와 핵심 정보를 명확하게 제시해 제품에 대한 관심이 구매 및 탐색으로 이어지도록 설계했습니다.`,
+                designApproach: `메인 배너는 딥 네이비 배경과 스톤 질감의 받침으로 제품의 존재감을 강조하고, 좌측 카피와 우측 제품 이미지로 시선을 분리했습니다.
+                제품 라인업은 일정한 그리드로 정렬해 비교가 쉽도록 구성했으며, 주력 제품 영역은 연출 이미지와 효능 수치를 함께 배치해 정보의 주목도를 높였습니다.
+                넓은 여백과 블루 포인트 컬러로 시각적 일관성을 유지하고, 브랜드 배너와 높낮이를 달리한 리뷰 카드로 화면에 리듬을 더했습니다.
+                하단에는 기프트 이미지를 활용한 이벤트 영역을 배치해 구매 혜택을 안내했습니다.`,
+                layout: 'wide',
+                image: 'images/아이오페맨즈웹사이트1.png',
+                detailImages: ['images/아이오페맨즈웹사이트2.png'],
+                projectUrl: ''
+            }
+        ],
+
         branding: [
             {
                 slug: 'fold',
@@ -262,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
                 detailDescription: ``,
                 // 이 브랜드의 모달에 표시할 내용을 입력하세요.
-                scope: '네이밍 · 로고 · 패키지 · 응용 디자인',           // 예: 네이밍 · 로고 · 패키지 · 응용 디자인
+                scope: '네이밍 · 로고',           // 예: 네이밍 · 로고 · 패키지 · 응용 디자인
                 role: '기획 · 디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
                 tools: 'Illustrator · Photoshop · ChatGPT',           // 사용 프로그램
                 brandConcept: ``,    // 브랜드가 지향하는 가치 · 타깃 · 핵심 콘셉트
@@ -292,50 +359,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     'images/burgerclub.png'
                 ]
             },
-        ],
-
-        web: [
-            {
-                title: '가상브랜드 CHERIE 웹 메인배너 디자인',
-                category: 'Banner',
-                description: '당신의 무드를 말하는 단 하나의 컬러.',
-                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-                detailDescription: ``,
-                // 이 작업의 모달에 표시할 내용을 입력하세요.
-                format: '1280 * 720px',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
-                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
-                tools: 'Illustrator, Photoshop',           // 사용 프로그램
-                designIntent: `색조 제품을 선택할 때 확인하는 발색과 광택을 
-                첫 화면에서 함께 보여주고자 했습니다.
-                입술을 크게 드러낸 모델 이미지에 틴트 용기와 제형을 연결하여 
-                제품의 사용 모습과 실제 형태를 한 화면에서 확인하도록 구성했습니다.
-
-`,    // 작업의 목적 · 대상 · 전달할 메시지
-                designApproach: `립 컬러에서 가져온 버건디와 브라운을 화면 전반에 적용하고, 
-                왼쪽 배경의 명도를 낮춰 카피 영역을 확보했습니다. 
-                굵은 산세리프 제목에 가는 필기체를 겹쳐 형태의 대비를 주었으며 
-                제목 아래에 설명과 컬렉션 이동 버튼을 배치해 읽는 순서를 정리했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
-                layout: 'portrait',
-                image: 'images/CHERIE 가상브랜드히어로배너1.jpg',
-                detailImages: [
-                    'images/가상브랜드히어로배너1.jpg'
-                ]
-            },
-            {
-                title: '웹 메인 페이지 디자인',
-                category: 'Web Design',
-                description: '작업을 소개하는 한 줄 설명',
-                detailDescription: ``,
-                format: 'Desktop 메인 페이지',
-                role: '',
-                tools: '',
-                designIntent: ``,
-                designApproach: ``,
-                layout: 'wide',
-                image: 'images/web-thumbnail.jpg',
-                detailImages: ['images/web-main.png'],
-                projectUrl: ''
-            }
         ],
 
         motion: [{
@@ -408,13 +431,13 @@ document.addEventListener('DOMContentLoaded', function () {
             projectUrl: '',                // 상세 페이지가 있으면 주소 입력
 
             layout: 'wide',
-            image: 'images/지마켓썸네일.png',
+            image: 'images/지마켓썸네일1.png',
 
             // YouTube 공유 주소의 영상 ID
             youtubeId: 'F6jmoRrXnYE',
 
             detailImages: [
-                'images/지마켓썸네일.png'
+                'images/지마켓썸네일2.png'
             ]
         },
 
@@ -478,13 +501,13 @@ document.addEventListener('DOMContentLoaded', function () {
             projectUrl: '',                // 상세 페이지가 있으면 주소 입력
 
             layout: 'wide',
-            image: 'images/넷플릭스-thumb.png',
+            image: 'images/넷플릭스1.png',
 
             // YouTube 공유 주소의 영상 ID
             youtubeId: 'IDifG2mUUxw',
 
             detailImages: [
-                'images/넷플릭스-thumb.png'
+                'images/넷플릭스2.png'
             ]
         }
         ]
@@ -516,8 +539,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const workPanels = {
         visual: document.getElementById('panel-visual'),
-        branding: document.getElementById('panel-branding'),
         web: document.getElementById('panel-web'),
+        branding: document.getElementById('panel-branding'),
         motion: document.getElementById('panel-motion')
     };
 
