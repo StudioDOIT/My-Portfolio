@@ -20,7 +20,7 @@
     <script defer src="./js/micromodal.min.js"></script>
     <!-- app.js보다 먼저 로드해야 Typed 생성자가 준비됩니다. -->
     <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script defer src="./js/app.js?v=web-category-20261019"></script>
+    <script defer src="./js/app.js?v=category-order-20261022"></script>
 </head>
 
 <body><a class="skip" href="#work">작품 바로가기</a>
@@ -28,7 +28,7 @@
                 alt="gnblogo"><span>®</span></a>
         <nav aria-label="주요 메뉴">
             <a href="#main" class="active">Main</a>
-            <a href="#work">Work <sup data-work-total>13</sup></a>
+            <a href="#work">Work <sup data-work-total>14</sup></a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav><span class="header-note">DESIGNER PORTFOLIO / 2026</span>
@@ -36,7 +36,7 @@
     <main>
         <section id="main" class="hero">
             <div class="hero-heading-group">
-                <div class="eyebrow"><span>GRAPHIC DESIGNER</span><span> VISUAL · BRANDING · VIDEO</span></div>
+                <div class="eyebrow"><span>GRAPHIC DESIGNER</span><span> VISUAL · WEB · BRANDING · VIDEO</span></div>
                 <h1>질문으로 시작하고,<br><span class="hero-answer">디자인으로 답하다.</span></h1>
             </div>
             <div class="conversation conversation--expanded" aria-labelledby="prompt-text">
@@ -50,11 +50,13 @@
                 </div>
                 <p class="prompt-hint">질문을 클릭하면 작업으로 이동합니다.</p>
                 <div class="question-options">
-                    <button type="button" data-question="visual" aria-controls="panel-visual">메시지를 그래픽으로 표현한다면? <span
+                    <button type="button" data-question="visual" aria-controls="panel-visual">단 한 장으로 시선을 붙잡을 수 있을까?<span
                             aria-hidden="true">↗</span></button>
-                    <button type="button" data-question="branding" aria-controls="panel-branding">브랜드의 가치를 시각화한다면? <span
+                    <button type="button" data-question="web" aria-controls="panel-web">어떤 화면에 머물고 싶을까?<span
                             aria-hidden="true">↗</span></button>
-                    <button type="button" data-question="motion" aria-controls="panel-motion">움직임으로 여운을 남긴다면? <span
+                    <button type="button" data-question="branding" aria-controls="panel-branding">이 브랜드는 어떤 모습으로 기억될까?<span
+                            aria-hidden="true">↗</span></button>
+                    <button type="button" data-question="motion" aria-controls="panel-motion">짧은 순간은 어떻게 오래 남을까?<span
                             aria-hidden="true">↗</span></button>
 
                 </div>
@@ -66,7 +68,7 @@
         </section>
         <section id="work" class="work section-pad">
             <div class="section-kicker"><span> 01 / WORK</span><span>SELECTED PROJECTS — <span
-                        data-work-total>13</span></span></div>
+                        data-work-total>14</span></span></div>
             <div class="work-heading">
                 <h2>Selected <span class="italic">work.</span></h2>
                 <div class="work-intro">
@@ -75,28 +77,28 @@
             </div>
             <div class="work-tabs" role="tablist" aria-label="작품 분야">
                 <button id="tab-visual" role="tab" aria-selected="true" aria-controls="panel-visual"
-                    data-category="visual">Visual <sup>07</sup></button>
+                    data-category="visual">Visual <sup>06</sup></button>
+                <button id="tab-web" role="tab" aria-selected="false" aria-controls="panel-web" tabindex="-1"
+                    data-category="web">Web <sup>02</sup></button>
                 <button id="tab-branding" role="tab" aria-selected="false" aria-controls="panel-branding" tabindex="-1"
                     data-category="branding">Branding <sup>02</sup></button>
-                <button id="tab-web" role="tab" aria-selected="false" aria-controls="panel-web" tabindex="-1"
-                    data-category="web">Web <sup>00</sup></button>
                 <button id="tab-motion" role="tab" aria-selected="false" aria-controls="panel-motion" tabindex="-1"
                     data-category="motion">Video <sup>04</sup></button>
             </div>
             <div id="panel-visual" class="work-grid" role="tabpanel" aria-labelledby="tab-visual"></div>
-            <div id="panel-branding" class="work-grid" role="tabpanel" aria-labelledby="tab-branding" hidden></div>
             <div id="panel-web" class="work-grid" role="tabpanel" aria-labelledby="tab-web" hidden></div>
+            <div id="panel-branding" class="work-grid" role="tabpanel" aria-labelledby="tab-branding" hidden></div>
             <div id="panel-motion" class="work-grid" role="tabpanel" aria-labelledby="tab-motion" hidden></div>
 
         </section>
-        <div class="portfolio-marquee" role="img" aria-label="VISUAL · BRANDING · VIDEO">
+        <div class="portfolio-marquee" role="img" aria-label="VISUAL · WEB · BRANDING · VIDEO">
             <div class="portfolio-marquee__track" aria-hidden="true">
                 <div class="portfolio-marquee__group"><span>VISUAL</span><span
-                        class="portfolio-marquee__dot">✳</span><span>BRANDING</span><span
+                        class="portfolio-marquee__dot">✳</span><span>WEB</span><span class="portfolio-marquee__dot">✳</span><span>BRANDING</span><span
                         class="portfolio-marquee__dot">✳</span><span>VIDEO</span><span
                         class="portfolio-marquee__dot">✳</span></div>
                 <div class="portfolio-marquee__group"><span>VISUAL</span><span
-                        class="portfolio-marquee__dot">✳</span><span>BRANDING</span><span
+                        class="portfolio-marquee__dot">✳</span><span>WEB</span><span class="portfolio-marquee__dot">✳</span><span>BRANDING</span><span
                         class="portfolio-marquee__dot">✳</span><span>VIDEO</span><span
                         class="portfolio-marquee__dot">✳</span></div>
             </div>
@@ -295,7 +297,7 @@
             </div>
         </section>
     </main>
-    <footer><span>© 2026 Seoin Hong</span><span>DESIGNER PORTFOLIO</span><span>VISUAL · BRANDING · VIDEO </span>
+    <footer><span>© 2026 Seoin Hong</span><span>DESIGNER PORTFOLIO</span><span>VISUAL · WEB · BRANDING · VIDEO </span>
     </footer>
     <noscript>
         <p class="noscript-note">작품 목록과 상세 화면을 보려면 브라우저의 JavaScript를 활성화해 주세요.</p>
