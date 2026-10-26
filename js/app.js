@@ -1,43 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     /* =========================================================
-       01. Selected Gallery
-       ========================================================= */
-
-    const gallery = document.querySelector('.hero-gallery');
-    const galleryElement =
-        gallery && gallery.querySelector('.hero-swiper');
-
-    if (galleryElement && typeof Swiper !== 'undefined') {
-        const slideCount = gallery.querySelector('.slide-count');
-        const totalSlides =
-            galleryElement.querySelectorAll('.swiper-slide').length;
-
-        function updateGalleryCount(swiper) {
-            if (!slideCount) return;
-
-            const current = String(swiper.realIndex + 1).padStart(2, '0');
-            const total = String(totalSlides).padStart(2, '0');
-
-            slideCount.textContent = current + ' / ' + total;
-        }
-
-        new Swiper(galleryElement, {
-            slidesPerView: 1,
-            spaceBetween: 24,
-            speed: 600,
-            rewind: true,
-            navigation: {
-                prevEl: gallery.querySelector('.slide-prev'),
-                nextEl: gallery.querySelector('.slide-next')
-            },
-            on: {
-                init: updateGalleryCount,
-                slideChange: updateGalleryCount
-            }
-        });
-    }
-
-    /* =========================================================
        02. 질문 버튼 → Work 탭 바로 이동
        ========================================================= */
 
@@ -437,43 +399,7 @@ document.addEventListener('DOMContentLoaded', function () {
             detailImages: [
                 'images/지마켓썸네일2.png'
             ]
-        },
-
-        {
-            title: 'CORTIS (코르티스) - REDRED 교차편집 (STAGE MIX)',
-            category: 'Video',
-            description: '서로 다른 무대를 안무와 리듬에 맞춰 연결한 ‘REDRED’ 교차편집 영상',
-            // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-            detailDescription: ``,
-            // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
-            duration: '02:41',                  // 예: '00:30'
-            role: '기획 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
-            tools: 'Premiere Pro',                     // 예: 'After Effects · Premiere Pro'
-            productionNotes: `서로 다른 무대가 하나의 퍼포먼스처럼 이어지도록 구성한 교차편집 작업입니다.
-                무대마다 달라지는 의상과 조명, 배경을 활용하면서도 안무와 곡의 흐름이 자연스럽게 이어지는 데 중점을 두었습니다.
-
-                장면을 연결할 때는 인물의 위치와 움직임, 카메라 구도를 기준으로 전환 지점을 잡았습니다.
-                멤버의 표정이 드러나는 클로즈업과 안무를 보여주는 단체 장면을 함께 배치해 화면에 변화를 주고,
-                곡의 전개에 따라 퍼포먼스의 에너지가 전달되도록 편집했습니다.
-                
-
-                ⚠️ 저작권 안내 (Copyright Notice)
-                원본 영상 및 음원의 저작권은 각 방송사와 소속사에 있습니다.
-                요청 시 삭제될 수 있습니다.
-                (For portfolio purposes only. All rights belong to the original owners.)`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
-            projectUrl: '',                // 상세 페이지가 있으면 주소 입력
-
-            layout: 'wide',
-            image: 'images/코르티스레드레드썸네일.jpg',
-
-            // YouTube 공유 주소의 영상 ID
-            youtubeId: 'xcibSXSd048',
-
-            detailImages: [
-                'images/코르티스레드레드썸네일.jpg'
-            ]
-        },
-        {
+        },{
             title: '넷플릭스 인트로 활용 식전영상',
             category: 'Video',
             description: '두 사람의 이야기가 한 편의 시리즈가 되다.',
@@ -506,6 +432,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
             detailImages: [
                 'images/넷플릭스2.png'
+            ]
+        },
+        {
+            title: 'CORTIS (코르티스) - REDRED 교차편집 (STAGE MIX)',
+            category: 'Video',
+            description: '서로 다른 무대를 안무와 리듬에 맞춰 연결한 ‘REDRED’ 교차편집 영상',
+            // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+            detailDescription: ``,
+            // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+            duration: '02:41',                  // 예: '00:30'
+            role: '기획 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+            tools: 'Premiere Pro',                     // 예: 'After Effects · Premiere Pro'
+            productionNotes: `서로 다른 무대가 하나의 퍼포먼스처럼 이어지도록 구성한 교차편집 작업입니다.
+                무대마다 달라지는 의상과 조명, 배경을 활용하면서도 안무와 곡의 흐름이 자연스럽게 이어지는 데 중점을 두었습니다.
+
+                장면을 연결할 때는 인물의 위치와 움직임, 카메라 구도를 기준으로 전환 지점을 잡았습니다.
+                멤버의 표정이 드러나는 클로즈업과 안무를 보여주는 단체 장면을 함께 배치해 화면에 변화를 주고,
+                곡의 전개에 따라 퍼포먼스의 에너지가 전달되도록 편집했습니다.
+                
+
+                ⚠️ 저작권 안내 (Copyright Notice)
+                원본 영상 및 음원의 저작권은 각 방송사와 소속사에 있습니다.
+                요청 시 삭제될 수 있습니다.
+                (For portfolio purposes only. All rights belong to the original owners.)`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
+            projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+
+            layout: 'wide',
+            image: 'images/코르티스레드레드썸네일.jpg',
+
+            // YouTube 공유 주소의 영상 ID
+            youtubeId: 'xcibSXSd048',
+
+            detailImages: [
+                'images/코르티스레드레드썸네일.jpg'
             ]
         }
         ]
@@ -1399,32 +1359,6 @@ document.addEventListener('DOMContentLoaded', function () {
     initWork();
 
     /* =========================================================
-       14. 상단 갤러리 → 모달 연결
-       ========================================================= */
-
-    const galleryButtons = document.querySelectorAll(
-        '.hero-gallery [data-project]'
-    );
-
-    const galleryProjects = {
-        v1: ['visual', 0],
-        v2: ['visual', 1],
-        b1: ['branding', 0],
-        b2: ['branding', 1],
-        b3: ['branding', 2]
-    };
-
-    galleryButtons.forEach(function (button) {
-        const target = galleryProjects[button.dataset.project];
-
-        if (!target) return;
-
-        button.addEventListener('click', function () {
-            openProjectModal(target[0], target[1]);
-        });
-    });
-
-    /* =========================================================
        15. GSAP 스크롤 등장 효과
        ========================================================= */
     if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
@@ -1451,18 +1385,9 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             document.querySelectorAll(
-                '#process .process-heading, #work .work-heading, ' +
+                '#work .work-heading, ' +
                 '#about .about-heading, #contact .contact-title'
             ).forEach(function (el) { reveal(el, [el]); });
-
-            const process = document.querySelector('#process .approach-grid');
-            if (process) {
-                if (window.innerWidth > 800) {
-                    reveal(process, Array.from(process.children), 0.12);
-                } else {
-                    Array.from(process.children).forEach(function (el) { reveal(el, [el]); });
-                }
-            }
 
             document.querySelectorAll(
                 '#about .about-profile, #about .about-fact, ' +
