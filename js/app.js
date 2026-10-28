@@ -842,6 +842,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const isMotion = category === 'motion';
         modal.classList.toggle('modal--motion', isMotion);
         modal.classList.toggle('modal--branding', category === 'branding');
+        modal.classList.toggle('modal--visual', category === 'visual');
         modal.classList.add('modal--details');
         // 각 작업의 데이터로 정보 영역을 새로 구성합니다.
         const facts = modal.querySelector('.modal-facts');
@@ -1595,7 +1596,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 backSpeed: 25,      // 글씨 지워지는 속도
 
                 startDelay: 500,    // 처음 시작 전 대기
-                backDelay: 1800,    // 다 써진 뒤 지우기 전 대기
+                backDelay: 3600,    // 다 써진 뒤 지우기 전 대기
 
                 showCursor: true,
                 cursorChar: '|',
