@@ -1020,6 +1020,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
 
+            img.addEventListener('load', function () {
+                img.classList.toggle('visual-landscape',
+                    category === 'visual' && img.naturalWidth > img.naturalHeight);
+                if (currentSwiper && !currentSwiper.destroyed) {
+                    currentSwiper.updateAutoHeight(0);
+                }
+            });
+
             img.src = src;
 
             slide.appendChild(img);
@@ -1596,7 +1604,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 backSpeed: 25,      // 글씨 지워지는 속도
 
                 startDelay: 500,    // 처음 시작 전 대기
-                backDelay: 3600,    // 다 써진 뒤 지우기 전 대기
+                backDelay: 1800,    // 다 써진 뒤 지우기 전 대기
 
                 showCursor: true,
                 cursorChar: '|',
