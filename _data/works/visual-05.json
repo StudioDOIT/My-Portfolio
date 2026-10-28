@@ -1,0 +1,28 @@
+{
+  "title": "스타벅스 3단 리플렛",
+  "category": "leaflet",
+  "description": "스타벅스와 함께 특별한 순간을.",
+  "detailDescription": "",
+  "format": "A4",
+  "role": "디자인 / 개인 작업 100%",
+  "tools": "Illustrator · ChatGPT",
+  "designIntent": "외지에서는 실제 스타벅스의 UI를 첨부하여 사용자가 직접 화면을 따라 딜리버스 서비스를 접수할 수 있도록 유도했습니다.\n\n",
+  "designApproach": "내지에서는 많은 정보량을 압축하여 한눈에 이해할 수 있도록 메뉴를 아이콘으로 만들어 디자인했습니다.",
+  "layout": "wide",
+  "image": "images/스타벅스3단리플렛1.png",
+  "detailImages": [
+    "images/스타벅스3단리플렛5.png",
+    "images/스타벅스3단리플렛1.png",
+    "images/스타벅스3단리플렛2.png",
+    "images/스타벅스3단리플렛3.jpg",
+    "images/스타벅스3단리플렛4.jpg"
+  ],
+  "id": "visual-05",
+  "workGroup": "visual",
+  "year": "",
+  "tags": [],
+  "projectUrl": "",
+  "published": true,
+  "featured": true,
+  "order": 5
+}

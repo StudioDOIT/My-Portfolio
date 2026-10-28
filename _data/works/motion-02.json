@@ -1,0 +1,24 @@
+{
+  "title": "G-MARKET 2D 30s 모션그래픽",
+  "category": "Motion",
+  "description": "검색부터 선택까지, 쇼핑의 흐름을 담은 2D 모션그래픽",
+  "detailDescription": "",
+  "duration": "00:30",
+  "role": "기획 · 디자인 · 편집 / 개인 작업 100%",
+  "tools": "After Effects · Illustrator · ChatGPT",
+  "productionNotes": "온라인 쇼핑 플랫폼 G마켓을 주제로, 검색부터 상품을 발견하고 선택해 장바구니에 담는 과정을\n                하나의 흐름으로 구성한 30초 모션그래픽 광고 영상을 제작했습니다.\n\n                전체 영상은 SEARCH → FIND → CHOOSE → ADD의 쇼핑 경험을 중심으로 전개했으며,\n                검색창에 키워드를 직접 입력하고 삭제하는 타이핑 모션, 상품 카드의 이동과 회전, 아이콘 및\n                타이포그래피 전환 등 다양한 2D 모션을 활용해 짧은 러닝타임 안에서도 화면의 리듬이 끊기지\n                않도록 구성했습니다.\n                \n                특히 ‘사람과 상품을 잇는, 취향과 브랜드를 잇는’이라는 메시지를 중심으로 ‘잇는’이라는 키워드가\n                자연스럽게 연결되도록 연출하고, 검색과 선택이라는 익숙한 쇼핑 행동을 직관적인 그래픽으로\n                시각화했습니다.\n                \n                G마켓의 브랜드 컬러와 쇼핑 UI에서 연상되는 그래픽 요소를 적극적으로 활용하되,\n                실제 웹 화면을 그대로 재현하기보다는 광고 영상에 적합한 타이포그래피와 카드형 레이아웃으로\n                재구성했습니다.\n\n                빠르고 경쾌한 온라인 쇼핑 경험을 표현하는 데 중점을 두었습니다.",
+  "projectUrl": "",
+  "layout": "wide",
+  "image": "images/지마켓썸네일1.png",
+  "youtubeId": "F6jmoRrXnYE",
+  "detailImages": [
+    "images/지마켓썸네일2.png"
+  ],
+  "id": "motion-02",
+  "workGroup": "motion",
+  "year": "",
+  "tags": [],
+  "published": true,
+  "featured": true,
+  "order": 13
+}

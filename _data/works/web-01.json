@@ -1,0 +1,24 @@
+{
+  "title": "가상브랜드 CHERIE 웹사이트 메인배너 디자인 프로젝트",
+  "category": "Banner",
+  "description": "당신의 무드를 말하는 단 하나의 컬러.",
+  "detailDescription": "",
+  "format": "1280 * 720px",
+  "role": "디자인 / 개인 작업 100%",
+  "tools": "Illustrator · Photoshop",
+  "designIntent": "색조 제품을 선택할 때 확인하는 발색과 광택을 \n                첫 화면에서 함께 보여주고자 했습니다.\n                입술을 크게 드러낸 모델 이미지에 틴트 용기와 제형을 연결하여 \n                제품의 사용 모습과 실제 형태를 한 화면에서 확인하도록 구성했습니다.\n\n",
+  "designApproach": "립 컬러에서 가져온 버건디와 브라운을 화면 전반에 적용하고, \n                왼쪽 배경의 명도를 낮춰 카피 영역을 확보했습니다. \n                굵은 산세리프 제목에 가는 필기체를 겹쳐 형태의 대비를 주었으며 \n                제목 아래에 설명과 컬렉션 이동 버튼을 배치해 읽는 순서를 정리했습니다.",
+  "layout": "portrait",
+  "image": "images/CHERIE 가상브랜드히어로배너1.png",
+  "detailImages": [
+    "images/CHERIE 가상브랜드히어로배너2.jpg"
+  ],
+  "id": "web-01",
+  "workGroup": "web",
+  "year": "",
+  "tags": [],
+  "projectUrl": "",
+  "published": true,
+  "featured": true,
+  "order": 7
+}

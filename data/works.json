@@ -1,0 +1,14 @@
+---
+layout: null
+---
+[
+{%- assign separator = "" -%}
+{%- assign entries = site.data.works | sort -%}
+{%- for entry in entries -%}
+  {%- assign work = entry[1] -%}
+  {%- if work.published == true and work.featured == true -%}
+    {{- separator -}}{{- work | jsonify -}}
+    {%- assign separator = "," -%}
+  {%- endif -%}
+{%- endfor -%}
+]

@@ -1,0 +1,28 @@
+{
+  "title": "연세대 2단 리플렛",
+  "category": "leaflet",
+  "description": "힘내라 우리 후배들!",
+  "detailDescription": "",
+  "format": "A4",
+  "role": "디자인 / 개인 작업 100%",
+  "tools": "Illustrator · ChatGPT",
+  "designIntent": "캠페인의 목적과 신뢰감을 효과적으로 \n                전달하기 위해 블루 컬러를 중심으로 전체적인 \n                톤앤매너를 구성했습니다.\n\n",
+  "designApproach": "\n\n                외지에서는 캠페인의 메시지와 일러스트를 활용해 후배를\n                응원하는 따뜻한 의미를 강조하고, 내지에서는 기부자가\n                원하는 장학금 유형을 선택하여 약정서 작성까지 빠르게\n                이어갈 수 있도록 설계했습니다.",
+  "layout": "wide",
+  "image": "images/연세대2단리플렛1.png",
+  "detailImages": [
+    "images/연세대2단리플렛5.png",
+    "images/연세대2단리플렛1.png",
+    "images/연세대2단리플렛2.png",
+    "images/연세대2단리플렛3.jpg",
+    "images/연세대2단리플렛4.jpg"
+  ],
+  "id": "visual-04",
+  "workGroup": "visual",
+  "year": "",
+  "tags": [],
+  "projectUrl": "",
+  "published": true,
+  "featured": true,
+  "order": 4
+}

@@ -1,0 +1,25 @@
+{
+  "slug": "fold",
+  "title": "fold",
+  "category": "Branding",
+  "description": "겹겹이 쌓이는 일상의 따뜻함과 소중함을 담은 베이커리 브랜드",
+  "detailDescription": "",
+  "scope": "네이밍 · 로고",
+  "role": "기획 · 디자인 / 개인 작업 100%",
+  "tools": "Illustrator · Photoshop · ChatGPT",
+  "brandConcept": "",
+  "identityNotes": "",
+  "layout": "wide",
+  "image": "images/fold-thumb.png",
+  "detailImages": [
+    "images/fold.png"
+  ],
+  "id": "fold",
+  "workGroup": "branding",
+  "year": "",
+  "tags": [],
+  "projectUrl": "",
+  "published": true,
+  "featured": true,
+  "order": 10
+}

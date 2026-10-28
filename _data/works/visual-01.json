@@ -1,0 +1,25 @@
+{
+  "title": "공기업 취업특강 안내포스터 리디자인",
+  "category": "Poster",
+  "description": "이제는 취업하세요!",
+  "detailDescription": "",
+  "format": "A3",
+  "role": "디자인 / 개인 작업 100%",
+  "tools": "Illustrator",
+  "designIntent": "리디자인에서는 제목의 '업'을 'UP'으로 \n                치환한 타이틀을 가장 먼저 보이도록 배치하여 \n                특강 참여가 참여자를 긍정적인 방향으로 \n                이끌어줄 수 있다는 느낌을 주도록 하였습니다.\n\n",
+  "designApproach": "레드 계열의 컬러를 사용하여\n                가독성에 부담을 준다고 판단하여\n                블루 계열의 컬러를 사용함으로써\n                이를 개선하였습니다.",
+  "layout": "portrait",
+  "image": "images/공기업취업특강포스터3.png",
+  "detailImages": [
+    "images/공기업취업특강포스터2.png",
+    "images/공기업취업특강포스터1.png"
+  ],
+  "id": "visual-01",
+  "workGroup": "visual",
+  "year": "",
+  "tags": [],
+  "projectUrl": "",
+  "published": true,
+  "featured": true,
+  "order": 1
+}

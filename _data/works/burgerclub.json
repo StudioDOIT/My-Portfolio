@@ -1,0 +1,25 @@
+{
+  "slug": "burgerclub",
+  "title": "BURGERCLUB",
+  "category": "Branding",
+  "description": "편하게 맛있는 버거를 마음껏 먹고 싶은 사람들을 위한 수제버거 브랜드",
+  "detailDescription": "",
+  "scope": "네이밍 · 로고 · 패키지 · 응용 디자인",
+  "role": "기획 · 디자인 / 개인 작업 100%",
+  "tools": "Illustrator · Photoshop · ChatGPT",
+  "brandConcept": "",
+  "identityNotes": "",
+  "layout": "wide",
+  "image": "images/burgerclub-thumb.png",
+  "detailImages": [
+    "images/burgerclub.png"
+  ],
+  "id": "burgerclub",
+  "workGroup": "branding",
+  "year": "",
+  "tags": [],
+  "projectUrl": "",
+  "published": true,
+  "featured": true,
+  "order": 11
+}

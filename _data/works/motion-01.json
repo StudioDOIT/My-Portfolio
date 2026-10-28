@@ -1,0 +1,29 @@
+{
+  "title": "한국수목원정원관리원 공모전 생성형 AI 활용 (숏폼 부문)",
+  "category": "Video",
+  "description": "한국수목원정원관리원의 역할을 캐릭터로 풀어낸 생성형 AI 숏폼",
+  "detailDescription": "",
+  "duration": "00:15",
+  "role": "기획 · 디자인 · 편집 / 개인 작업 100%",
+  "tools": "ChatGPT · Google Flow",
+  "productionNotes": "한국수목원정원관리원의 핵심 업무를 친근하게 전달하기 위해\n                산림생태계 관리, 식물 증식 및 복원, 곤충 관리, 희귀·자생식물 보전, 시설물 관리를\n                각각 하나의 캐릭터로 의인화하여 세계관을 구성했습니다.\n\n                자연을 소재로 한 캐릭터의 형태와 색감, 의상, 표정 등을 통일해\n                각기 다른 역할을 지니면서도 하나의 시리즈처럼 보이도록 디자인했습니다.\n\n                AI 이미지 생성 과정에서는 캐릭터의 외형과 배경 스타일이 장면마다 달라지지 않도록\n                프롬프트를 반복적으로 수정하며 일관성을 높였습니다.\n\n                또한 영상으로 확장했을 때 장면이 자연스럽게 연결될 수 있도록\n                카메라 구도와 빛의 방향, 시간대와 장면 전환까지 함께 고려해\n                수목원의 다양한 역할과 자연 보전의 이야기가 하나의 흐름으로 이어지도록 구성했습니다.",
+  "projectUrl": "",
+  "layout": "wide",
+  "image": "images/한수정썸네일1.png",
+  "videoSrc": "videos/생명을 이어가는 하루.mp4",
+  "detailImages": [
+    "images/한수정썸네일1.png",
+    "images/한수정썸네일2.png",
+    "images/한수정썸네일3.png",
+    "images/한수정썸네일4.png",
+    "images/한수정썸네일5.png",
+    "images/한수정썸네일6.png"
+  ],
+  "id": "motion-01",
+  "workGroup": "motion",
+  "year": "",
+  "tags": [],
+  "published": true,
+  "featured": true,
+  "order": 12
+}

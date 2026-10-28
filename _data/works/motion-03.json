@@ -1,0 +1,24 @@
+{
+  "title": "넷플릭스 인트로 활용 식전영상",
+  "category": "Video",
+  "description": "두 사람의 이야기가 한 편의 시리즈가 되다.",
+  "detailDescription": "",
+  "duration": "00:26",
+  "role": "기획 · 디자인 · 편집 / 개인 작업 100%",
+  "tools": "After Effects · Illustrator",
+  "productionNotes": "두 사람의 만남과 결혼을 하나의 시리즈로 소개하는 웨딩 영상입니다.\n                넷플릭스의 프로필 선택, 메인 화면, 콘텐츠 상세 화면을 결혼 소식에 맞게 재구성했습니다.\n\n                프로필에는 두 사람의 이름과 사진을 배치하고, 메인 화면에서는\n                ‘오늘, 결혼합니다’를 콘텐츠 제목으로 사용했습니다.\n                함께한 사진은 순위형 콘텐츠 목록으로 구성해,\n                두 사람의 시간을 한 편의 작품을 탐색하듯 살펴보도록 했습니다.\n\n                상단 메뉴와 콘텐츠 소개 문구에는 하객을 향한 감사와 결혼 소식을 담았습니다.\n                기존 인터페이스의 형식을 유지하면서 각 요소를 두 사람의 이야기로 바꾸는 데 중점을 두었습니다.\n\n                커서의 이동과 버튼 선택에 따라 화면이 전환되도록 구성해,\n                프로필 선택에서 메인 화면을 거쳐 상세 소개로 이어지는 흐름을 만들었습니다.",
+  "projectUrl": "",
+  "layout": "wide",
+  "image": "images/넷플릭스1.png",
+  "youtubeId": "IDifG2mUUxw",
+  "detailImages": [
+    "images/넷플릭스2.png"
+  ],
+  "id": "motion-03",
+  "workGroup": "motion",
+  "year": "",
+  "tags": [],
+  "published": true,
+  "featured": true,
+  "order": 14
+}

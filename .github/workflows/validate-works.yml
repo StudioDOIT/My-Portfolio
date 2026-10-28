@@ -1,0 +1,40 @@
+name: Validate CMS Works
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: validate-works-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install PyYAML==6.0.3
+      - name: Validate CMS Collection separately
+        run: python scripts/check-cms.py
+      - name: Build and test website data
+        run: |
+          node scripts/build-works.mjs --out /tmp/works.json
+          node --test scripts/test-works.mjs
+          node --check js/app.js
+      - name: Build using the existing GitHub Pages Jekyll pipeline
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Compare generated website JSON with CMS Collection
+        run: node scripts/build-works.mjs --compare _site/data/works.json
+# Deployment remains the existing main/root GitHub Pages build and deployment.
+# This workflow never writes commits, so CMS edits cannot cause a commit loop.

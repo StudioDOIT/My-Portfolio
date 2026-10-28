@@ -1,0 +1,25 @@
+{
+  "title": "청년창업지원사업 안내포스터",
+  "category": "Poster",
+  "description": "청년의 시작을 그리다.",
+  "detailDescription": "",
+  "format": "A3",
+  "role": "기획 · 디자인 / 개인 작업 100%",
+  "tools": "Illustrator",
+  "designIntent": "청년층을 대상으로 하는 홍보물인 만큼 \n                성장과 시작을 상징하는 초록색 컬러를 \n                메인으로 사용하였습니다.\n\n",
+  "designApproach": "공공기관 홍보물의 기본적인 정보 전달 구조는 \n                유지하면서도 활기찬 청년을 보여주는 일러스트 요소를\n                활용하여 친근하고 적극적인 분위기를 표현했습니다.",
+  "layout": "portrait",
+  "image": "images/청년창업지원포스터3.png",
+  "detailImages": [
+    "images/청년창업지원포스터2.png",
+    "images/청년창업지원포스터1.png"
+  ],
+  "id": "visual-02",
+  "workGroup": "visual",
+  "year": "",
+  "tags": [],
+  "projectUrl": "",
+  "published": true,
+  "featured": true,
+  "order": 2
+}
