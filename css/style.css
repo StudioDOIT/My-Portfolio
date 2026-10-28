@@ -4786,3 +4786,268 @@ main {
 #main .prompt-display #prompt-text {
     font-size: clamp(17px, 1.8vw, 21px);
 }
+
+
+/* Latest layout and component adjustments extracted from index.html. */
+@font-face {
+            font-family: 'Cafe24ShiningStar';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* Main layout with a spacious search field. */
+        #main.hero {
+            align-items: center;
+            gap: 0;
+            padding-top: calc(clamp(64px, 7vw, 104px) - 30px);
+            padding-bottom: calc(clamp(64px, 7vw, 104px) + 30px);
+        }
+
+        #main.hero>.eyebrow {
+            margin: 0 0 22px;
+            font-size: 11px;
+            letter-spacing: .18em;
+            line-height: 1.6;
+        }
+
+        #main.hero>.prompt-display {
+            position: relative;
+            top: 23px;
+            display: grid;
+            grid-template-columns: 22px minmax(0, 1fr) 22px;
+            align-items: center;
+            gap: 14px;
+            width: min(100%, 860px);
+            max-width: 100%;
+            min-height: 64px;
+            margin: 0 auto clamp(56px, 6vw, 84px);
+            padding: 18px 34px;
+            border-radius: 36px;
+            box-shadow: 0 6px 24px rgb(62 43 82 / 4%);
+        }
+
+        #main.hero>.prompt-display .search-symbol {
+            grid-area: 1 / 1;
+            transform: translateX(6px);
+            width: 22px;
+            height: 22px;
+        }
+
+        #main.hero>.prompt-display #prompt-text {
+            grid-area: 1 / 2;
+            margin: 0;
+            padding-inline: 6px;
+            font-family: inherit;
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 1.65;
+            letter-spacing: -.035em;
+            word-break: keep-all;
+            overflow-wrap: anywhere;
+            text-align: center;
+        }
+
+        #main.hero>.hero-heading-group {
+            width: 100%;
+            margin: 0;
+        }
+
+        #main.hero>.hero-heading-group h1 {
+            margin: 0;
+            font-size: clamp(12px, 4vw, 60px);
+            font-weight: 400;
+            white-space: nowrap;
+            line-height: 1.3;
+            letter-spacing: -.055em;
+            text-align: center;
+        }
+
+        #main.hero>.hero-heading-group h1 .hero-emphasis {
+            font-family: 'Cafe24ShiningStar', 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+            font-size: 1.2em;
+            letter-spacing: -.025em;
+            color: #49356b;
+        }
+
+        #main.hero>.conversation.conversation--expanded {
+            width: min(100%, 680px);
+            margin: clamp(28px, 3vw, 40px) auto 0;
+            padding: 0;
+        }
+
+        #main.hero .question-options {
+            gap: 12px;
+        }
+
+        #main.hero .question-options button {
+            min-height: 46px;
+            padding: 12px 16px;
+        }
+
+        @media (max-width: 700px) {
+            #main.hero>.eyebrow {
+                font-size: 10px;
+                letter-spacing: .12em;
+                margin-bottom: 18px;
+            }
+
+            #main.hero>.prompt-display {
+                padding: 16px 26px;
+                gap: 12px;
+                border-radius: 30px;
+            }
+
+            #main.hero>.prompt-display #prompt-text {
+                font-size: 16px;
+            }
+
+            #main.hero .question-options {
+                gap: 10px;
+            }
+        }
+
+        .modal-gallery-shell {
+            position: relative;
+        }
+
+        .modal-gallery-shell:has(> .project-detail-swiper[hidden]) {
+            display: none;
+        }
+
+        #project-modal.modal--visual .modal-gallery-shell {
+            width: min(100%, 820px);
+            margin-inline: auto;
+            padding-inline: 60px;
+        }
+
+        #project-modal.modal--visual #project-detail-swiper {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            margin-inline: auto;
+        }
+
+        #project-modal.modal--visual #project-detail-swiper .swiper-slide {
+            display: flex;
+            height: auto;
+            height: 500px;
+            min-height: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #project-modal.modal--visual #project-detail-swiper .swiper-slide img {
+            width: auto !important;
+            height: auto !important;
+            max-width: 100% !important;
+            max-height: 500px !important;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        #project-modal.modal--visual .modal-gallery-shell>.modal-nav {
+            top: 250px;
+            margin-top: -21px;
+        }
+
+        #project-modal.modal--visual .modal-gallery-shell>.swiper-button-prev {
+            left: 0;
+        }
+
+        #project-modal.modal--visual .modal-gallery-shell>.swiper-button-next {
+            right: 0;
+        }
+
+        @media (max-width: 600px) {
+            #project-modal.modal--visual .modal-gallery-shell {
+                padding-inline: 36px;
+            }
+
+            #project-modal.modal--visual .modal-gallery-shell>.modal-nav {
+                width: 28px;
+                height: 28px;
+                margin-top: -14px;
+            }
+        }
+
+        /* Landscape Visual artworks fill the frame without lavender gaps. */
+        #project-modal.modal--visual #project-detail-swiper .swiper-slide img.visual-landscape {
+            width: 100% !important;
+            height: 500px !important;
+            max-width: 100% !important;
+            max-height: 500px !important;
+            object-fit: cover !important;
+            object-position: center;
+        }
+
+        #about .training-highlight {
+            background: linear-gradient(transparent 30%, #e5daf2 30%, #e5daf2 92%, transparent 92%);
+            padding: 0 .14em;
+            -webkit-box-decoration-break: clone;
+            box-decoration-break: clone;
+        }
+
+        #work .work-grid--carousel {
+            padding-top: 18px;
+        }
+
+        #work .work-card {
+            overflow: visible;
+        }
+
+        #work .work-card-button {
+            overflow: visible;
+        }
+
+        #work .work-card-button>.work-card-image,
+        #work .work-card-button>.work-card-info {
+            transform: translateY(0);
+            transition: transform .3s cubic-bezier(.2, .7, .3, 1) !important;
+        }
+
+        #work .work-card-button:hover>.work-card-image,
+        #work .work-card-button:hover>.work-card-info,
+        #work .work-card-button:focus-visible>.work-card-image,
+        #work .work-card-button:focus-visible>.work-card-info {
+            transform: translateY(-12px) !important;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            #work .work-card-button>.work-card-image,
+            #work .work-card-button>.work-card-info {
+                transition: none !important;
+            }
+        }
+
+        #contact .contact-title {
+            font-family: 'Cafe24ShiningStar', 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+            line-height: 1.3;
+            letter-spacing: -.025em;
+        }
+
+        #contact>#contact-action.contact-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 28px auto 0;
+            gap: 8px;
+            text-align: center;
+        }
+
+        #contact>#contact-action .contact-label-plain,
+        #contact>#contact-action .contact-email-plain {
+            margin: 0;
+            text-align: center;
+        }
+
+        #contact .contact-bottom {
+            justify-content: flex-end;
+        }
