@@ -4,3 +4,5 @@ baseurl: /My-Portfolio
 exclude:
   - CMS_SETUP.md
   - scripts
+  - CLOUDFLARE_SETUP.md
+  - dist

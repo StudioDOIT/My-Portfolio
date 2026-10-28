@@ -53,7 +53,7 @@
 
 ## GitHub Pages 배포 확인
 
-기존 GitHub Pages의 main/root 기본 배포는 유지합니다. CMS 저장 → GitHub 커밋 → 기존 **pages build and deployment** 실행 → Jekyll 통합 → 사이트 반영 순서입니다. 새로운 서버, 데이터베이스, Cloudflare 설정, 프레임워크는 추가하지 않았습니다. CSS·이미지·기존 HTML·방명록 관련 기능은 수정하지 않았습니다.
+기존 GitHub Pages의 main/root 기본 배포는 유지합니다. CMS 저장 → GitHub 커밋 → 기존 **pages build and deployment** 실행 → Jekyll 통합 → 사이트 반영 순서입니다. 새로운 서버, 데이터베이스, 프레임워크는 추가하지 않았습니다. Cloudflare Pages에도 배포하려면 `CLOUDFLARE_SETUP.md`에 작성된 빌드 설정으로 Git 연결을 추가합니다. CSS·이미지·기존 HTML·방명록 관련 기능은 수정하지 않았습니다.
 
 1. 저장소 Actions 탭 https://github.com/StudioDOIT/My-Portfolio/actions 에서 **pages build and deployment**와 **Validate CMS Works**가 성공했는지 확인합니다.
 2. https://studiodoit.github.io/My-Portfolio/data/works.json 에서 배포된 작품 JSON을 확인합니다. 이 주소의 응답이 `---` 또는 Liquid 코드가 아니라 `[`로 시작하는 JSON이어야 합니다.
@@ -113,3 +113,7 @@ Pages CMS의 실제 Works 목록, 폼 저장, 이미지 업로드 및 검색/정
 - https://pagescms.org/docs/configuration/fields/image/
 - https://jekyllrb.com/docs/datafiles/
 - https://jekyllrb.com/docs/front-matter/
+
+## Cloudflare Pages 추가 배포
+
+`CLOUDFLARE_SETUP.md`를 참고하세요. Cloudflare 빌드 명령은 `node scripts/build-cloudflare.mjs`, 출력 폴더는 `dist`입니다. GitHub Pages와 같은 작품별 JSON을 사용하며, Cloudflare 루트 주소에 맞춘 이미지·링크 경로 변환은 생성 결과에만 적용합니다. 기존 GitHub Pages 설정과 원본 작품 데이터는 유지합니다.

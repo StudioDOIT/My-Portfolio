@@ -28,6 +28,7 @@ jobs:
         run: |
           node scripts/build-works.mjs --out /tmp/works.json
           node --test scripts/test-works.mjs
+          node --test scripts/test-cloudflare.mjs
           node --check js/app.js
       - name: Build using the existing GitHub Pages Jekyll pipeline
         uses: actions/jekyll-build-pages@v1
