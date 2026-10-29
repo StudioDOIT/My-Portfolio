@@ -1,8 +1,0 @@
-# Preserve the existing main / root GitHub Pages (Jekyll) deployment.
-url: https://studiodoit.github.io
-baseurl: /My-Portfolio
-exclude:
-  - CMS_SETUP.md
-  - scripts
-  - CLOUDFLARE_SETUP.md
-  - dist
