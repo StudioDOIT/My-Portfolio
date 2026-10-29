@@ -4823,7 +4823,7 @@ main {
             width: min(100%, 820px);
             max-width: 100%;
             min-height: 64px;
-            margin: 0 auto clamp(56px, 6vw, 84px);
+            margin: 0 auto clamp(40px, 3vw, 48px);
             padding: 18px 34px;
             border-radius: 36px;
             box-shadow: 0 6px 24px rgb(62 43 82 / 4%);
@@ -4884,6 +4884,7 @@ main {
         }
 
         #main.hero .question-options button {
+            font-size: 14px;
             min-height: 46px;
             padding: 12px 16px;
         }
@@ -5069,4 +5070,97 @@ main {
     letter-spacing: 0;
     line-height: 1.65;
     text-transform: none;
+}
+
+/* Contact: clearer introduction and email link. */
+#contact .contact-conversation {
+    margin-top: 26px;
+}
+#contact .contact-conversation .contact-prompt-hint {
+    margin: 0;
+    font-size: clamp(15px, 1.1vw, 16px);
+    font-weight: 400;
+    line-height: 1.85;
+    text-align: center;
+}
+#contact #contact-action .contact-email-plain {
+    display: inline-block;
+    font-size: clamp(20px, 1.5vw, 23px);
+    font-weight: 500;
+    line-height: 1.6;
+    text-decoration: underline !important;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 6px;
+    text-decoration-color: rgb(255 255 255 / 65%) !important;
+}
+#contact #contact-action .contact-email-plain:hover {
+    text-decoration-color: currentColor !important;
+}
+
+/* Compact Contact ending and clear sticky-header anchor offset. */
+#main, #work, #about, #contact { scroll-margin-top: 96px; }
+#contact.contact {
+    min-height: clamp(580px, 74svh, 720px);
+    padding-top: 112px;
+    padding-bottom: 104px;
+}
+#contact > .section-kicker { top: 32px; }
+#contact .contact-bottom { bottom: 28px; }
+@media (max-width: 800px) {
+    #main, #work, #about, #contact { scroll-margin-top: 86px; }
+    #contact.contact { min-height: 0; padding-top: 40px; padding-bottom: 32px; }
+    #contact > .section-kicker { position: static; margin-bottom: 52px; }
+    #contact .contact-bottom { position: static; margin-top: 48px; }
+}
+
+/* Small breathing room after the two handwritten title words. */
+#main.hero > .hero-heading-group h1 .hero-emphasis {
+    display: inline-block;
+    margin-inline-end: .07em;
+}
+
+/* Work heading: reduce the space before the gallery. */
+#work .work-heading { margin-bottom: 24px; }
+#work .work-heading h2 {
+    font-size: clamp(44px, 5.8vw, 80px);
+}
+#work .work-tabs { margin-bottom: 24px; }
+/* Only this project's thumbnail: enlarge the artwork within its existing frame. */
+#work .work-card-image:has(> img[src$="청년창업지원포스터3.png"]) {
+    overflow: hidden;
+}
+#work .work-card-image > img[src$="청년창업지원포스터3.png"] {
+    scale: 1.18;
+    transform-origin: 50% 50%;
+}
+@media (max-width: 800px) {
+    #work .work-heading h2 { font-size: 44px; }
+    #work .work-heading { margin-bottom: 20px; }
+}
+
+/* About: even disclosure spacing and a quieter MBTI row. */
+#about .about-copy > .about-facts {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#about .about-fact:has([data-about-disclosure]) {
+    padding-block: 24px;
+}
+#about .about-fact:has([data-about-disclosure]) > dd {
+    margin: 0;
+}
+#about .about-fact:has([data-about-disclosure]) .about-more-toggle {
+    margin: 8px auto 0;
+    min-height: 44px;
+}
+#about .about-profile-copy .about-principle {
+    color: #49356b;
+}
+#about .about-facts .about-fact-mbti {
+    padding-block: 16px;
+    min-height: 0;
+}
+#about .about-facts .about-fact-mbti > dt,
+#about .about-facts .about-fact-mbti > dd {
+    margin: 0;
 }
