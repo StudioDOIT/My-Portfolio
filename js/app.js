@@ -350,7 +350,7 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'images/한수정썸네일1.png',
 
             // ★ 여기 수정: 실제 영상 파일 경로로 변경
-            videoSrc: 'videos/생명을 이어가는 하루.mp4',
+            youtubeId: '51oUgEjIf9U',
 
             detailImages: [
                 'images/한수정썸네일1.png',
@@ -944,6 +944,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 thumbnail.src = project.image;
                 thumbnail.alt = project.title + ' 영상 썸네일';
                 thumbnail.style.cssText = 'display:block;width:100%;height:auto;';
+                if (youtubeId === '51oUgEjIf9U') {
+                    // 세로형 원본을 자르지 않고, 미리보기 높이만 줄입니다.
+                    video.style.display = 'flex';
+                    video.style.justifyContent = 'center';
+                    thumbnailLink.style.width = 'auto';
+                    thumbnailLink.style.height = 'min(50dvh, 450px)';
+                    thumbnailLink.style.maxWidth = '100%';
+                    thumbnailLink.style.aspectRatio = '9 / 16';
+                    thumbnail.style.width = '100%';
+                    thumbnail.style.height = '100%';
+                    thumbnail.style.objectFit = 'contain';
+                    thumbnail.style.objectPosition = 'center';
+                }
                 const playIcon = document.createElement('span');
                 playIcon.textContent = '▶';
                 playIcon.setAttribute('aria-hidden', 'true');
