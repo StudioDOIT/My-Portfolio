@@ -1531,6 +1531,36 @@ document.addEventListener('DOMContentLoaded', function () {
     syncNavWithHash();
     window.addEventListener('hashchange', syncNavWithHash);
 
+    // Follow the section actually visible beneath the sticky header.
+    const navSections = Array.from(navLinks).map(function (link) {
+        return document.querySelector(link.getAttribute('href'));
+    }).filter(Boolean);
+    let navFramePending = false;
+    function syncNavWithScroll() {
+        navFramePending = false;
+        const header = document.querySelector('header');
+        const marker = (header ? header.getBoundingClientRect().height : 0) + window.innerHeight * 0.28;
+        let current = navSections[0];
+        navSections.forEach(function (section) {
+            if (section.getBoundingClientRect().top <= marker) current = section;
+        });
+        if (window.scrollY > 0 && window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 4) {
+            current = navSections[navSections.length - 1];
+        }
+        if (current) setActiveNav('#' + current.id);
+    }
+    function queueNavSync() {
+        if (!navFramePending) {
+            navFramePending = true;
+            window.requestAnimationFrame(syncNavWithScroll);
+        }
+    }
+    window.addEventListener('scroll', queueNavSync, { passive: true });
+    window.addEventListener('resize', queueNavSync);
+    window.addEventListener('load', queueNavSync);
+    queueNavSync();
+
+
     /* =========================================================
        18. 학력 / 자격증 더보기
        ========================================================= */
