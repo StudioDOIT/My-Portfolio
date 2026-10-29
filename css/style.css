@@ -5172,3 +5172,9 @@ main {
 @media (max-width: 800px) {
     #about .about-heading h2 { font-size: 44px; }
 }
+
+/* Optical baseline adjustment for the second handwritten title word. */
+#main.hero > .hero-heading-group h1 .hero-emphasis:nth-of-type(2) {
+    position: relative;
+    top: 3px;
+}
