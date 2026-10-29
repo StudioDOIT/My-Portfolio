@@ -5164,3 +5164,11 @@ main {
 #about .about-facts .about-fact-mbti > dd {
     margin: 0;
 }
+
+/* Match the About section title to the Work section title. */
+#about .about-heading h2 {
+    font-size: clamp(44px, 5.8vw, 80px);
+}
+@media (max-width: 800px) {
+    #about .about-heading h2 { font-size: 44px; }
+}
