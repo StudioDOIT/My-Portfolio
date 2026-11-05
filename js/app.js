@@ -157,8 +157,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     'images/연세대2단리플렛5.png',
                     'images/연세대2단리플렛1.png',
                     'images/연세대2단리플렛2.png',
-                    'images/연세대2단리플렛3.jpg',
-                    'images/연세대2단리플렛4.jpg',
+                    'images/연세대2단리플렛3.png',
+                    'images/연세대2단리플렛4.png',
                 ]
             },
             {
@@ -181,8 +181,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     'images/스타벅스3단리플렛5.png',
                     'images/스타벅스3단리플렛1.png',
                     'images/스타벅스3단리플렛2.png',
-                    'images/스타벅스3단리플렛3.jpg',
-                    'images/스타벅스3단리플렛4.jpg',
+                    'images/스타벅스3단리플렛3.png',
+                    'images/스타벅스3단리플렛4.png',
                 ]
             },
             {
