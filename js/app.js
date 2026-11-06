@@ -185,22 +185,16 @@ document.addEventListener('DOMContentLoaded', function () {
             {
                 title: 'IOPE 상세페이지 디자인',
                 category: 'Detailed Page',
-                description: '일상에 닿는 정책의 언어.',
+                description: '---',
                 // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
                 detailDescription: ``,
                 // 이 작업의 모달에 표시할 내용을 입력하세요.
                 format: '1080 * 1080 px',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
                 role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
                 tools: 'Figma',           // 사용 프로그램
-                designIntent: `복잡한 정책 정보를 한눈에 파악할 수 있도록
-                페이지의 내용마다 컬러를 다르게 사용하였습니다.
-                중요한 내용은 레드 컬러와 크기 대비를 통해
-                자연스럽게 강조했습니다.
+                designIntent: `---`,
 `,    // 작업의 목적 · 대상 · 전달할 메시지
-                designApproach: `첫 페이지에서 시선을 유도하기 위해
-                큰 사이즈의 타이포그래피를 적용하였습니다.
-                신청을 유도하고, 정보를 직관적으로 인지할 수 있도록
-                일러스트 요소를 활용했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
+                designApproach: `---`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
                 layout: 'portrait',
                 image: 'images/IOPE상세페이지2.png',
                 detailImages: [
