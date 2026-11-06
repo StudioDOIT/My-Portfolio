@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const pageScroll = createPortfolioSmoothScroll();
     /* =========================================================
        02. 질문 버튼 → Work 탭 바로 이동
        ========================================================= */
@@ -19,10 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const work = document.getElementById('work');
 
         if (work) {
-            work.scrollIntoView({
-                behavior: reducedMotion.matches ? 'auto' : 'smooth',
-                block: 'start'
-            });
+            pageScroll.scrollTo(work);
         }
     }
 
@@ -129,7 +127,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 ]
             },
-
             {
                 title: '연세대 2단 리플렛',
                 category: 'leaflet',
@@ -183,6 +180,32 @@ document.addEventListener('DOMContentLoaded', function () {
                     'images/스타벅스3단리플렛2.png',
                     'images/스타벅스3단리플렛3.png',
                     'images/스타벅스3단리플렛4.png',
+                ]
+            },
+            {
+                title: 'IOPE 상세페이지 디자인',
+                category: 'Detailed Page',
+                description: '일상에 닿는 정책의 언어.',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 작업의 모달에 표시할 내용을 입력하세요.
+                format: '1080 * 1080 px',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
+                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Figma',           // 사용 프로그램
+                designIntent: `복잡한 정책 정보를 한눈에 파악할 수 있도록
+                페이지의 내용마다 컬러를 다르게 사용하였습니다.
+                중요한 내용은 레드 컬러와 크기 대비를 통해
+                자연스럽게 강조했습니다.
+`,    // 작업의 목적 · 대상 · 전달할 메시지
+                designApproach: `첫 페이지에서 시선을 유도하기 위해
+                큰 사이즈의 타이포그래피를 적용하였습니다.
+                신청을 유도하고, 정보를 직관적으로 인지할 수 있도록
+                일러스트 요소를 활용했습니다.`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
+                layout: 'portrait',
+                image: 'images/IOPE상세페이지2.png',
+                detailImages: [
+                    'images/IOPE상세페이지2.png',
+
                 ]
             },
             {
@@ -261,7 +284,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 detailImages: ['images/아이오페맨즈웹사이트2.png'],
                 projectUrl: ''
             },
-             {
+            {
                 title: '올리브베러 웹사이트 리디자인 프로젝트',
                 category: 'Web Design',
                 description: '나에게 필요한 웰니스를 찾다.',
@@ -399,7 +422,7 @@ document.addEventListener('DOMContentLoaded', function () {
             detailImages: [
                 'images/지마켓썸네일2.png'
             ]
-        },{
+        }, {
             title: '넷플릭스 인트로 활용 식전영상',
             category: 'Video',
             description: '두 사람의 이야기가 한 편의 시리즈가 되다.',
@@ -1073,6 +1096,7 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.classList.add('is-open');
         modal.setAttribute('aria-hidden', 'false');
 
+        pageScroll.stop();
         document.body.style.overflow = 'hidden';
         container.scrollTop = 0;
 
@@ -1209,6 +1233,7 @@ document.addEventListener('DOMContentLoaded', function () {
             modal.setAttribute('aria-hidden', 'true');
 
             document.body.style.overflow = originalOverflow;
+            pageScroll.start();
 
             backgroundState.forEach(function (state) {
                 state[0].inert = state[1];
@@ -1680,3 +1705,141 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 });
+
+/* 스무스 스크롤: Lenis 1.3.27 자동 로드. 실패 시 브라우저 기본 스크롤 유지. */
+function createPortfolioSmoothScroll() {
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let lenis = null;
+    let blocked = false;
+    let loading = null;
+    let tick = null;
+    let frame = 0;
+
+    function offset() {
+        const padding = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) || 0;
+        const header = document.querySelector('header');
+        const height = header ? header.getBoundingClientRect().height : 0;
+        return Math.max(padding, height + 12);
+    }
+
+    function scrollToElement(target) {
+        if (blocked || !target) return;
+        if (lenis) {
+            lenis.resize();
+            lenis.scrollTo(target, { offset: -offset(), duration: 1.05 });
+        } else {
+            window.scrollTo({
+                top: Math.max(0, window.scrollY + target.getBoundingClientRect().top - offset()),
+                behavior: motion.matches ? 'instant' : 'smooth'
+            });
+        }
+    }
+
+    function destroy() {
+        if (tick && window.gsap) window.gsap.ticker.remove(tick);
+        tick = null;
+        cancelAnimationFrame(frame);
+        if (lenis) lenis.destroy();
+        lenis = null;
+    }
+
+    function loadLibrary() {
+        if (window.Lenis) return Promise.resolve();
+        if (loading) return loading;
+        loading = new Promise(function (resolve, reject) {
+            const script = document.createElement('script');
+            script.src = 'https://unpkg.com/lenis@1.3.27/dist/lenis.min.js';
+            script.async = true;
+            script.onload = resolve;
+            script.onerror = reject;
+            document.head.appendChild(script);
+        });
+        return loading;
+    }
+
+    function start() {
+        if (motion.matches || lenis) return;
+        loadLibrary().then(function () {
+            if (motion.matches || lenis || !window.Lenis) return;
+            lenis = new window.Lenis({
+                duration: 1.05, // 숫자를 높이면 더 천천히 멈춥니다.
+                smoothWheel: true,
+                syncTouch: false, // 모바일 터치는 기본 스크롤 유지
+                autoRaf: false,
+                anchors: false,
+                allowNestedScroll: true,
+                prevent: function (node) {
+                    return node instanceof Element && Boolean(node.closest(
+                        '#project-modal, [data-lenis-prevent], textarea, select'
+                    ));
+                }
+            });
+            lenis.on('scroll', function () {
+                if (window.ScrollTrigger) window.ScrollTrigger.update();
+            });
+            if (window.gsap) {
+                tick = function (time) { if (lenis) lenis.raf(time * 1000); };
+                window.gsap.ticker.add(tick);
+            } else {
+                const raf = function (time) {
+                    if (!lenis) return;
+                    lenis.raf(time);
+                    frame = requestAnimationFrame(raf);
+                };
+                frame = requestAnimationFrame(raf);
+            }
+            if (blocked) lenis.stop();
+        }).catch(function () {
+            // CDN 접속 실패 시에도 메뉴, 작품, 기본 스크롤은 그대로 작동합니다.
+        });
+    }
+
+    // HTML/CSS 파일을 따로 수정하지 않아도 필요한 스타일을 적용합니다.
+    if (!document.getElementById('portfolio-lenis-style')) {
+        const style = document.createElement('style');
+        style.id = 'portfolio-lenis-style';
+        style.textContent = `
+            html.lenis, html.lenis body { height: auto; }
+            html.lenis.lenis-smooth { scroll-behavior: auto !important; }
+            .lenis.lenis-stopped { overflow: hidden; }
+            #project-modal .modal-container { overscroll-behavior: contain; }
+            @media (prefers-reduced-motion: reduce) {
+                html { scroll-behavior: auto !important; }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    document.addEventListener('click', function (event) {
+        if (event.defaultPrevented || event.button !== 0 || event.metaKey ||
+            event.ctrlKey || event.shiftKey || event.altKey || blocked) return;
+        const link = event.target instanceof Element ? event.target.closest('a[href]') : null;
+        if (!link || link.hasAttribute('download') ||
+            (link.target && link.target !== '_self')) return;
+        const url = new URL(link.href, location.href);
+        if (url.origin !== location.origin || url.pathname !== location.pathname ||
+            url.search !== location.search || !url.hash || url.hash === '#') return;
+        let id;
+        try { id = decodeURIComponent(url.hash.slice(1)); } catch (_) { return; }
+        const target = document.getElementById(id);
+        if (!target || target.closest('#project-modal')) return;
+        event.preventDefault();
+        if (location.hash !== url.hash) history.pushState(null, '', url.hash);
+        // 기본 앵커 이동과 동일하게 키보드 포커스도 대상에 전달합니다.
+        if (!target.hasAttribute('tabindex')) {
+            target.setAttribute('tabindex', '-1');
+            target.addEventListener('blur', function () { target.removeAttribute('tabindex'); }, { once: true });
+        }
+        target.focus({ preventScroll: true });
+        scrollToElement(target);
+    });
+    motion.addEventListener('change', function () {
+        if (motion.matches) destroy(); else start();
+    });
+    start();
+    return {
+        scrollTo: scrollToElement,
+        stop: function () { blocked = true; if (lenis) lenis.stop(); },
+        start: function () { blocked = false; if (lenis) { lenis.resize(); lenis.start(); } }
+    };
+}
