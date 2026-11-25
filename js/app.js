@@ -183,25 +183,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 ]
             },
             {
-                title: 'IOPE 상세페이지 디자인',
-                category: 'Detailed Page',
-                description: '....',
-                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-                detailDescription: ``,
-                // 이 작업의 모달에 표시할 내용을 입력하세요.
-                format: '1080 * 1080 px',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
-                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
-                tools: 'Figma',           // 사용 프로그램
-                designIntent: `....`,    // 작업의 목적 · 대상 · 전달할 메시지
-                designApproach: `....`,  // 컬러 · 서체 · 이미지 · 레이아웃의 표현 의도
-                layout: 'portrait',
-                image: 'images/IOPE상세페이지2.png',
-                detailImages: [
-                    'images/IOPE상세페이지2.png',
-
-                ]
-            },
-            {
                 title: '기업 명함 디자인',
                 category: 'Business card',
                 description: '작은 면적에 담긴 서로 다른 아이덴티티.',
@@ -263,7 +244,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 category: 'Web Design',
                 description: '남자의 스킨케어, 하나로 완성되는 자신감.',
                 detailDescription: ``,
-                format: 'Desktop 메인 페이지',
+                format: '1920 * 5390 px',
                 role: '디자인 / 개인 작업 100%',
                 tools: 'Figma · ChatGPT',
                 designIntent: `간편하면서도 효과적인 피부 관리를 원하는 사용자를 위해 ‘하나로 충분한 스킨케어’라는 메시지를 시각적으로 전달하고자 했습니다.
@@ -276,6 +257,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 image: 'images/아이오페맨즈웹사이트1.png',
                 detailImages: ['images/아이오페맨즈웹사이트2.png'],
                 projectUrl: ''
+            },
+            {
+                title: 'IOPE 상세페이지 디자인',
+                category: 'Detailed Page',
+                description: '남자의 스킨케어, 하나로 완성되는 자신감.',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 이 작업의 모달에 표시할 내용을 입력하세요.
+                format: '860 * 16775 px',          // 예: A3 포스터 / 3단 리플렛 / SNS 카드뉴스
+                role: '디자인 / 개인 작업 100%',            // 담당 역할 · 기여도
+                tools: 'Figma',           // 사용 프로그램
+                designIntent: `여러 단계의 스킨케어를 한 번에 끝내고 싶은 남성 사용자를 위해, 아이오페 맨 프로 레티놀 올인원의 기능과 사용법을 한 페이지에 담았습니다.
+                ‘사용 7일 후’를 기준으로 피부 개선 항목과 사용자 만족도를 구분해, 구매 전 궁금한 효과를 쉽게 찾아볼 수 있도록 기획했습니다.`,
+                designApproach: `블랙과 화이트를 중심으로 섹션 제목을 검은 띠에 통일하고, 연노랑을 포인트 컬러로 피부 개선 부위와 리뷰의 핵심 문구를 짚는 데 사용했습니다.
+                7일 후 개선 항목은 모델의 눈가와 볼 위에 표시하고, 4주 후 만족도는 가로 막대로 구성해 항목별 응답 비율을 비교할 수 있도록 했습니다.
+                정보가 이어지는 구간 사이에는 제품 사진을 에디토리얼 무드로 배치하고, 주요 기능과 성분은 아이콘과 도식으로 시각화했습니다.
+                하단에는 제형의 질감과 손등에 덜어낸 모습을 차례로 보여주어 제품을 어떻게 사용할지 떠올릴 수 있도록 했습니다.`,
+                layout: 'portrait',
+                image: 'images/아이오페 상세페이지1.png',
+                detailImages: [
+                    'images/아이오페 상세페이지2.png',
+
+                ]
             },
             {
                 title: '올리브베러 웹사이트 리디자인 프로젝트',
