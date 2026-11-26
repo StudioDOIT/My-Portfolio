@@ -341,17 +341,48 @@ document.addEventListener('DOMContentLoaded', function () {
             },
         ],
 
-        motion: [{
-            title: '한국수목원정원관리원 공모전 생성형 AI 활용 (숏폼 부문)',
-            category: 'Video',
-            description: '한국수목원정원관리원의 역할을 캐릭터로 풀어낸 생성형 AI 숏폼',
-            // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-            detailDescription: ``,
-            // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
-            duration: '00:15',                  // 예: '00:30'
-            role: '기획 · 디자인 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
-            tools: 'ChatGPT · Google Flow',                     // 예: 'After Effects · Premiere Pro'
-            productionNotes: `한국수목원정원관리원의 핵심 업무를 친근하게 전달하기 위해
+        motion: [
+            {
+                title: '2026 YENA 멜론뮤직어워드(MMA) - FIESTA, SMILEY, 캐치캐치 무대 숏폼',
+                category: 'Video',
+                description: '~~',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+                duration: '01:03',                  // 예: '00:30'
+                role: '기획 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+                tools: 'Premiere Pro',                     // 예: 'After Effects · Premiere Pro'
+                productionNotes: `~~~
+                
+
+                ⚠️ 저작권 안내 (Copyright Notice)
+                원본 영상 및 음원의 저작권은 각 방송사와 소속사에 있습니다.
+                요청 시 삭제될 수 있습니다.
+                (For portfolio purposes only. All rights belong to the original owners.)`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
+                projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+
+                layout: 'wide',
+                image: 'images/예나mma썸네일.png',
+
+                // YouTube 공유 주소의 영상 ID
+                youtubeId: 'p4N1Q8TxEIk',
+
+                detailImages: [
+                    'images/예나mma썸네일.png'
+                ]
+            }
+            ,
+            {
+                title: '한국수목원정원관리원 공모전 생성형 AI 활용 (숏폼 부문)',
+                category: 'Video',
+                description: '한국수목원정원관리원의 역할을 캐릭터로 풀어낸 생성형 AI 숏폼',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+                duration: '00:15',                  // 예: '00:30'
+                role: '기획 · 디자인 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+                tools: 'ChatGPT · Google Flow',                     // 예: 'After Effects · Premiere Pro'
+                productionNotes: `한국수목원정원관리원의 핵심 업무를 친근하게 전달하기 위해
                 산림생태계 관리, 식물 증식 및 복원, 곤충 관리, 희귀·자생식물 보전, 시설물 관리를
                 각각 하나의 캐릭터로 의인화하여 세계관을 구성했습니다.
 
@@ -364,34 +395,34 @@ document.addEventListener('DOMContentLoaded', function () {
                 또한 영상으로 확장했을 때 장면이 자연스럽게 연결될 수 있도록
                 카메라 구도와 빛의 방향, 시간대와 장면 전환까지 함께 고려해
                 수목원의 다양한 역할과 자연 보전의 이야기가 하나의 흐름으로 이어지도록 구성했습니다.`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
-            projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+                projectUrl: '',                // 상세 페이지가 있으면 주소 입력
 
-            layout: 'wide',
-            image: 'images/한수정썸네일1.png',
+                layout: 'wide',
+                image: 'images/한수정썸네일1.png',
 
-            // ★ 여기 수정: 실제 영상 파일 경로로 변경
-            youtubeId: '51oUgEjIf9U',
+                // ★ 여기 수정: 실제 영상 파일 경로로 변경
+                youtubeId: '51oUgEjIf9U',
 
-            detailImages: [
-                'images/한수정썸네일1.png',
-                'images/한수정썸네일2.png',
-                'images/한수정썸네일3.png',
-                'images/한수정썸네일4.png',
-                'images/한수정썸네일5.png',
-                'images/한수정썸네일6.png'
-            ]
-        },
-        {
-            title: 'G-MARKET 2D 30s 모션그래픽',
-            category: 'Motion',
-            description: '검색부터 선택까지, 쇼핑의 흐름을 담은 2D 모션그래픽',
-            // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-            detailDescription: ``,
-            // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
-            duration: '00:30',                  // 예: '00:30'
-            role: '기획 · 디자인 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
-            tools: 'After Effects · Illustrator · ChatGPT',                     // 예: 'After Effects · Premiere Pro'
-            productionNotes: `온라인 쇼핑 플랫폼 G마켓을 주제로, 검색부터 상품을 발견하고 선택해 장바구니에 담는 과정을
+                detailImages: [
+                    'images/한수정썸네일1.png',
+                    'images/한수정썸네일2.png',
+                    'images/한수정썸네일3.png',
+                    'images/한수정썸네일4.png',
+                    'images/한수정썸네일5.png',
+                    'images/한수정썸네일6.png'
+                ]
+            },
+            {
+                title: 'G-MARKET 2D 30s 모션그래픽',
+                category: 'Motion',
+                description: '검색부터 선택까지, 쇼핑의 흐름을 담은 2D 모션그래픽',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+                duration: '00:30',                  // 예: '00:30'
+                role: '기획 · 디자인 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+                tools: 'After Effects · Illustrator · ChatGPT',                     // 예: 'After Effects · Premiere Pro'
+                productionNotes: `온라인 쇼핑 플랫폼 G마켓을 주제로, 검색부터 상품을 발견하고 선택해 장바구니에 담는 과정을
                 하나의 흐름으로 구성한 30초 모션그래픽 광고 영상을 제작했습니다.
 
                 전체 영상은 SEARCH → FIND → CHOOSE → ADD의 쇼핑 경험을 중심으로 전개했으며,
@@ -408,28 +439,28 @@ document.addEventListener('DOMContentLoaded', function () {
                 재구성했습니다.
 
                 빠르고 경쾌한 온라인 쇼핑 경험을 표현하는 데 중점을 두었습니다.`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
-            projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+                projectUrl: '',                // 상세 페이지가 있으면 주소 입력
 
-            layout: 'wide',
-            image: 'images/지마켓썸네일1.png',
+                layout: 'wide',
+                image: 'images/지마켓썸네일1.png',
 
-            // YouTube 공유 주소의 영상 ID
-            youtubeId: 'F6jmoRrXnYE',
+                // YouTube 공유 주소의 영상 ID
+                youtubeId: 'F6jmoRrXnYE',
 
-            detailImages: [
-                'images/지마켓썸네일2.png'
-            ]
-        }, {
-            title: '넷플릭스 인트로 활용 식전영상',
-            category: 'Video',
-            description: '두 사람의 이야기가 한 편의 시리즈가 되다.',
-            // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-            detailDescription: ``,
-            // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
-            duration: '00:26',                  // 예: '00:30'
-            role: '기획 · 디자인 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
-            tools: 'After Effects · Illustrator',                     // 예: 'After Effects · Premiere Pro'
-            productionNotes: `두 사람의 만남과 결혼을 하나의 시리즈로 소개하는 웨딩 영상입니다.
+                detailImages: [
+                    'images/지마켓썸네일2.png'
+                ]
+            }, {
+                title: '넷플릭스 인트로 활용 식전영상',
+                category: 'Video',
+                description: '두 사람의 이야기가 한 편의 시리즈가 되다.',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+                duration: '00:26',                  // 예: '00:30'
+                role: '기획 · 디자인 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+                tools: 'After Effects · Illustrator',                     // 예: 'After Effects · Premiere Pro'
+                productionNotes: `두 사람의 만남과 결혼을 하나의 시리즈로 소개하는 웨딩 영상입니다.
                 넷플릭스의 프로필 선택, 메인 화면, 콘텐츠 상세 화면을 결혼 소식에 맞게 재구성했습니다.
 
                 프로필에는 두 사람의 이름과 사진을 배치하고, 메인 화면에서는
@@ -442,29 +473,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 커서의 이동과 버튼 선택에 따라 화면이 전환되도록 구성해,
                 프로필 선택에서 메인 화면을 거쳐 상세 소개로 이어지는 흐름을 만들었습니다.`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
-            projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+                projectUrl: '',                // 상세 페이지가 있으면 주소 입력
 
-            layout: 'wide',
-            image: 'images/넷플릭스1.png',
+                layout: 'wide',
+                image: 'images/넷플릭스1.png',
 
-            // YouTube 공유 주소의 영상 ID
-            youtubeId: 'IDifG2mUUxw',
+                // YouTube 공유 주소의 영상 ID
+                youtubeId: 'IDifG2mUUxw',
 
-            detailImages: [
-                'images/넷플릭스2.png'
-            ]
-        },
-        {
-            title: 'CORTIS (코르티스) - REDRED 교차편집 (STAGE MIX)',
-            category: 'Video',
-            description: '서로 다른 무대를 안무와 리듬에 맞춰 연결한 ‘REDRED’ 교차편집 영상',
-            // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-            detailDescription: ``,
-            // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
-            duration: '02:41',                  // 예: '00:30'
-            role: '기획 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
-            tools: 'Premiere Pro',                     // 예: 'After Effects · Premiere Pro'
-            productionNotes: `서로 다른 무대가 하나의 퍼포먼스처럼 이어지도록 구성한 교차편집 작업입니다.
+                detailImages: [
+                    'images/넷플릭스2.png'
+                ]
+            },
+            {
+                title: 'CORTIS (코르티스) - REDRED 교차편집 (STAGE MIX)',
+                category: 'Video',
+                description: '서로 다른 무대를 안무와 리듬에 맞춰 연결한 ‘REDRED’ 교차편집 영상',
+                // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+                detailDescription: ``,
+                // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+                duration: '02:41',                  // 예: '00:30'
+                role: '기획 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+                tools: 'Premiere Pro',                     // 예: 'After Effects · Premiere Pro'
+                productionNotes: `서로 다른 무대가 하나의 퍼포먼스처럼 이어지도록 구성한 교차편집 작업입니다.
                 무대마다 달라지는 의상과 조명, 배경을 활용하면서도 안무와 곡의 흐름이 자연스럽게 이어지는 데 중점을 두었습니다.
 
                 장면을 연결할 때는 인물의 위치와 움직임, 카메라 구도를 기준으로 전환 지점을 잡았습니다.
@@ -476,47 +507,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 원본 영상 및 음원의 저작권은 각 방송사와 소속사에 있습니다.
                 요청 시 삭제될 수 있습니다.
                 (For portfolio purposes only. All rights belong to the original owners.)`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
-            projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+                projectUrl: '',                // 상세 페이지가 있으면 주소 입력
 
-            layout: 'wide',
-            image: 'images/코르티스레드레드썸네일.jpg',
+                layout: 'wide',
+                image: 'images/코르티스레드레드썸네일.jpg',
 
-            // YouTube 공유 주소의 영상 ID
-            youtubeId: 'xcibSXSd048',
+                // YouTube 공유 주소의 영상 ID
+                youtubeId: 'xcibSXSd048',
 
-            detailImages: [
-                'images/코르티스레드레드썸네일.jpg'
-            ]
-        },
-        {
-            title: '2026 YENA 멜론뮤직어워드(MMA) - FIESTA, SMILEY, 캐치캐치 무대 쇼츠',
-            category: 'Video',
-            description: '~~',
-            // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
-            detailDescription: ``,
-            // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
-            duration: '01:03',                  // 예: '00:30'
-            role: '기획 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
-            tools: 'Premiere Pro',                     // 예: 'After Effects · Premiere Pro'
-            productionNotes: `~~~
-                
-
-                ⚠️ 저작권 안내 (Copyright Notice)
-                원본 영상 및 음원의 저작권은 각 방송사와 소속사에 있습니다.
-                요청 시 삭제될 수 있습니다.
-                (For portfolio purposes only. All rights belong to the original owners.)`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
-            projectUrl: '',                // 상세 페이지가 있으면 주소 입력
-
-            layout: 'wide',
-            image: 'images/예나mma썸네일.jpg',
-
-            // YouTube 공유 주소의 영상 ID
-            youtubeId: 'p4N1Q8TxEIk',
-
-            detailImages: [
-                'images/예나mma썸네일.jpg'
-            ]
-        }
+                detailImages: [
+                    'images/코르티스레드레드썸네일.jpg'
+                ]
+            }
         ]
 
 
