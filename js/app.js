@@ -366,6 +366,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // YouTube 공유 주소의 영상 ID
                 youtubeId: 'p4N1Q8TxEIk',
+                videoPortrait: true, // 모달 미리보기: 9:16 세로형, 수목원 영상과 동일한 높이
 
                 detailImages: [
                     'images/예나mma썸네일.png'
@@ -402,6 +403,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // ★ 여기 수정: 실제 영상 파일 경로로 변경
                 youtubeId: '51oUgEjIf9U',
+                videoPortrait: true, // 모달 미리보기: 9:16 세로형, 수목원 영상과 동일한 높이
 
                 detailImages: [
                     'images/한수정썸네일1.png',
@@ -995,7 +997,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 thumbnail.src = project.image;
                 thumbnail.alt = project.title + ' 영상 썸네일';
                 thumbnail.style.cssText = 'display:block;width:100%;height:auto;';
-                if (youtubeId === '51oUgEjIf9U') {
+                if (project.videoPortrait === true) {
                     // 세로형 원본을 자르지 않고, 미리보기 높이만 줄입니다.
                     video.style.display = 'flex';
                     video.style.justifyContent = 'center';
