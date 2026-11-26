@@ -508,13 +508,13 @@ document.addEventListener('DOMContentLoaded', function () {
             projectUrl: '',                // 상세 페이지가 있으면 주소 입력
 
             layout: 'wide',
-            image: 'images/코르티스레드레드썸네일.jpg',
+            image: 'images/예나mma썸네일.jpg',
 
             // YouTube 공유 주소의 영상 ID
-            youtubeId: 'xcibSXSd048',
+            youtubeId: 'p4N1Q8TxEIk',
 
             detailImages: [
-                'images/코르티스레드레드썸네일.jpg'
+                'images/예나mma썸네일.jpg'
             ]
         }
         ]
