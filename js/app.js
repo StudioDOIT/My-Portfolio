@@ -487,6 +487,35 @@ document.addEventListener('DOMContentLoaded', function () {
             detailImages: [
                 'images/코르티스레드레드썸네일.jpg'
             ]
+        },
+        {
+            title: '2026 YENA 멜론뮤직어워드(MMA) - FIESTA, SMILEY, 캐치캐치 무대 쇼츠',
+            category: 'Video',
+            description: '~~',
+            // 아래 백틱 사이에 이 작업의 긴 설명을 적어주세요.
+            detailDescription: ``,
+            // 영상 모달 설명: 따옴표/백틱 안에 작업별 내용을 입력하세요.
+            duration: '01:03',                  // 예: '00:30'
+            role: '기획 · 편집 / 개인 작업 100%',                      // 예: '기획 · 디자인 · 편집 / 개인 작업 100%'
+            tools: 'Premiere Pro',                     // 예: 'After Effects · Premiere Pro'
+            productionNotes: `~~~
+                
+
+                ⚠️ 저작권 안내 (Copyright Notice)
+                원본 영상 및 음원의 저작권은 각 방송사와 소속사에 있습니다.
+                요청 시 삭제될 수 있습니다.
+                (For portfolio purposes only. All rights belong to the original owners.)`,           // 기획 의도와 제작 과정을 여러 문단으로 입력
+            projectUrl: '',                // 상세 페이지가 있으면 주소 입력
+
+            layout: 'wide',
+            image: 'images/코르티스레드레드썸네일.jpg',
+
+            // YouTube 공유 주소의 영상 ID
+            youtubeId: 'xcibSXSd048',
+
+            detailImages: [
+                'images/코르티스레드레드썸네일.jpg'
+            ]
         }
         ]
 
